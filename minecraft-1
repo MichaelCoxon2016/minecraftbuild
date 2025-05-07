@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Pagoda Build - BuildItApp</title>
+    <style>
+        /* Basic Reset & Body Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .site-header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: #0779e4 3px solid;
+        }
+
+        .site-header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .site-header nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.2rem;
+        }
+
+        .site-header nav a:hover {
+            background-color: #0779e4;
+            border-radius: 5px;
+        }
+
+        /* Main Build Tutorial Page Layout */
+        .build-tutorial-page {
+            display: flex;
+            flex-wrap: wrap; /* Allow sidebar to wrap on smaller screens */
+            max-width: 1400px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .build-content {
+            flex: 3; /* Takes 3/4 of the space */
+            padding-right: 20px;
+        }
+
+        .sticky-sidebar {
+            flex: 1; /* Takes 1/4 of the space */
+            padding-left: 20px;
+            border-left: 1px solid #eee;
+            position: sticky;
+            top: 20px; /* Sticky position relative to viewport */
+            align-self: flex-start; /* Important for sticky to work with flex parent */
+            max-height: calc(100vh - 40px); /* Max height to enable scrolling if content overflows */
+            overflow-y: auto;
+        }
+
+
+        /* Build Content Specifics */
+        .build-content h1 {
+            color: #0779e4;
+            margin-bottom: 5px;
+        }
+        .author {
+            font-style: italic;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .build-intro-media {
+            margin-bottom: 20px;
+        }
+        .main-build-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: block; /* Center if container is set up */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 20px auto; /* Center the video container */
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .build-summary, .materials-list, .build-phase, .completion-message, .comments-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #fdfdfd;
+        }
+
+        .build-summary h2, .materials-list h2, .build-phase h3, .completion-message h2, .comments-section h2 {
+            color: #333;
+            border-bottom: 2px solid #0779e4;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        .key-info p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+        .key-info strong {
+            color: #555;
+        }
+
+        .materials-list ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .tutorial-phases-nav {
+            margin-bottom: 30px;
+            background-color: #e9f5ff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .tutorial-phases-nav ol {
+            padding-left: 20px;
+        }
+        .tutorial-phases-nav ol li a {
+            text-decoration: none;
+            color: #0056b3;
+        }
+        .tutorial-phases-nav ol li a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* Step-by-Step Guide */
+        .build-step {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .build-step:last-child {
+            border-bottom: none;
+        }
+
+        .build-step h4 {
+            margin-top: 0;
+            color: #17a2b8; /* A different accent color for steps */
+        }
+
+        .build-step img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 10px;
+            display: block; /* For centering if needed */
+        }
+
+        .tip {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        /* Comments */
+        .comment {
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .comment strong {
+            color: #0779e4;
+        }
+        .comment span {
+            display: block;
+            font-size: 0.8em;
+            color: #777;
+            margin-top: 5px;
+        }
+        .comment-form textarea {
+            width: calc(100% - 22px); /* Account for padding and border */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 80px;
+        }
+        .comment-form button {
+            background-color: #0779e4;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Sticky Sidebar Content */
+        .sticky-sidebar h3, .sticky-sidebar h4 {
+            color: #333;
+            margin-top: 0;
+        }
+        .sticky-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sticky-sidebar ul li a {
+            text-decoration: none;
+            color: #0056b3;
+            display: block;
+            padding: 5px 0;
+        }
+        .sticky-sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        .related-builds {
+            margin-top: 20px;
+        }
+        .related-build-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .related-build-item img {
+            width: 100px; /* Adjust as needed */
+            height: auto;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+        .site-footer p {
+            margin: 0.3rem 0;
+        }
+        .site-footer a {
+            color: #07c8f9;
+            text-decoration: none;
+        }
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .build-tutorial-page {
+                flex-direction: column;
+            }
+            .build-content {
+                padding-right: 0;
+            }
+            .sticky-sidebar {
+                position: static; /* Remove sticky positioning */
+                width: 100%;
+                border-left: none;
+                border-top: 1px solid #eee;
+                padding-left: 0;
+                margin-top: 20px;
+                max-height: none; /* Remove max-height */
+                overflow-y: visible; /* Remove scroll */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .site-header nav {
+                display: flex;
+                flex-direction: column;
+            }
+            .site-header nav a {
+                margin-bottom: 0.3rem;
+            }
+            .video-container {
+                /* Adjust video size for smaller screens if needed,
+                   but padding-bottom maintains aspect ratio well */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">BuildItApp.com</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#builds">All Builds</a>
+            <a href="#categories">Categories</a>
+            <a href="#submit">Submit Build</a>
+        </nav>
+    </header>
+
+    <main class="build-tutorial-page">
+        <article class="build-content">
+            <h1>Majestic Japanese Pagoda Tutorial</h1>
+            <p class="author">By: BuildItApp Team</p>
+
+            <div class="build-intro-media">
+                <!-- Main Image for the build -->
+                <img src="https://via.placeholder.com/800x450.png?text=Finished+Pagoda+View" alt="Finished Japanese Pagoda" class="main-build-image">
+                <!-- YouTube Video Embed -->
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3n3onrp-9f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <section class="build-summary">
+                <h2>Build Overview</h2>
+                <p>Learn to construct this serene and intricate Japanese Pagoda. Our detailed guide breaks down every layer, from foundation to rooftop, inspired by traditional designs.</p>
+                <div class="key-info">
+                    <p><strong>Difficulty:</strong> Intermediate</p>
+                    <p><strong>Estimated Build Time:</strong> 4-6 hours</p>
+                    <p><strong>Dimensions (approx):</strong> 25W x 25L x 40H blocks</p>
+                    <p><strong>Minecraft Version:</strong> Java 1.18+ / Bedrock</p>
+                </div>
+            </section>
+
+            <section class="materials-list">
+                <h2>Required Materials (Example)</h2>
+                <ul>
+                    <li>Dark Oak Wood: ~8 Stacks</li>
+                    <li>Spruce Wood Planks: ~6 Stacks</li>
+                    <li>Stone Bricks: ~10 Stacks</li>
+                    <li>Cobblestone: ~5 Stacks</li>
+                    <li>Dark Oak Stairs & Slabs</li>
+                    <li>Spruce Stairs & Slabs</li>
+                    <li>Lanterns: ~30</li>
+                    <li>Dark Oak Fences & Gates</li>
+                    <li>(Add more specific materials as needed)</li>
+                </ul>
+            </section>
+
+            <nav class="tutorial-phases-nav">
+                <h3>Build Phases:</h3>
+                <ol>
+                    <li><a href="#phase1">Phase 1: Foundation & First Floor</a></li>
+                    <li><a href="#phase2">Phase 2: Second Floor & Lower Roof</a></li>
+                    <li><a href="#phase3">Phase 3: Third Floor & Mid Roof</a></li>
+                    <li><a href="#phase4">Phase 4: Top Spire & Details</a></li>
+                    <li><a href="#phase5">Phase 5: Interior & Landscaping (Optional)</a></li>
+                </ol>
+            </nav>
+
+            <div class="step-by-step-guide">
+                <!-- Phase 1 -->
+                <section id="phase1" class="build-phase">
+                    <h3>Phase 1: Foundation & First Floor Layout</h3>
+                    <p>We'll start by laying out the base of the pagoda and building up the first main floor.</p>
+
+                    <div class="build-step">
+                        <h4>Step 1.1: Outline the Base</h4>
+                        <p>Using Stone Bricks, create a 21x21 block square outline on flat ground. This will be the outermost edge of your foundation.</p>
+                        <img src="https://via.placeholder.com/600x350.png?text=Step+1.1+Image" alt="Step 1.1: Base Outline">
+                    </div>
+
+                    <div class="build-step">
+                        <h4>Step 1.2: Raise Foundation Platform</h4>
+                        <p>Fill the outlined area with Cobblestone, raising it 1 block high. Then add another layer of Stone Bricks on top of the Cobblestone.</p>
+                        <img src="https://via.placeholder.com/600x350.png?text=Step+1.2+Image" alt="Step 1.2: Raised Platform">
+                    </div>
+
+                    <div class="build-step">
+                        <h4>Step 1.3: Place Corner Pillars</h4>
+                        <p>At each corner of the Stone Brick platform, place Dark Oak Wood Logs 5 blocks high.</p>
+                        <img src="https://via.placeholder.com/600x350.png?text=Step+1.3+Image" alt="Step 1.3: Corner Pillars">
+                        <p class="tip"><strong>Tip:</strong> Ensure your ground is level before starting for best results.</p>
+                    </div>
+                    <!-- ... More steps for Phase 1 ... -->
+                </section>
+
+                <!-- Phase 2 -->
+                <section id="phase2" class="build-phase">
+                    <h3>Phase 2: Second Floor & Lower Roof</h3>
+                    <p>Now we'll construct the second story and the iconic sloped roof for the first tier.</p>
+
+                    <div class="build-step">
+                        <h4>Step 2.1: First Floor Walls</h4>
+                        <p>Connect the Dark Oak pillars with Spruce Wood Planks to form the walls of the first floor. Leave openings for doors and windows as desired.</p>
+                        <img src="https://via.placeholder.com/600x350.png?text=Step+2.1+Image" alt="Step 2.1: First Floor Walls">
+                    </div>
+                    <div class="build-step">
+                        <h4>Step 2.2: Lower Roof Eaves</h4>
+                        <p>Using Dark Oak Stairs and Slabs, begin creating the overhanging eaves of the first roof tier. This typically extends 2-3 blocks out from the walls.</p>
+                        <img src="https://via.placeholder.com/600x350.png?text=Step+2.2+Image" alt="Step 2.2: Lower Roof Eaves">
+                    </div>
+                    <!-- ... More steps for Phase 2 ... -->
+                </section>
+
+                <!-- Add more Phases (3, 4, 5) here following the same structure -->
+
+                <section id="phase3" class="build-phase">
+                    <h3>Phase 3: Third Floor & Mid Roof</h3>
+                    <p>(Placeholder for steps and images)</p>
+                </section>
+
+                <section id="phase4" class="build-phase">
+                    <h3>Phase 4: Top Spire & Details</h3>
+                    <p>(Placeholder for steps and images)</p>
+                </section>
+
+                 <section id="phase5" class="build-phase">
+                    <h3>Phase 5: Interior & Landscaping (Optional)</h3>
+                    <p>(Placeholder for steps and images)</p>
+                </section>
+            </div>
+
+            <section class="completion-message">
+                <h2>Congratulations!</h2>
+                <p>You've completed the Majestic Japanese Pagoda! We'd love to see your version. Share it with #BuildItAppPagoda!</p>
+            </section>
+
+            <section class="comments-section">
+                <h2>Comments (5)</h2>
+                <div class="comment">
+                    <p><strong>SteveCraft123:</strong> Awesome build! Took me a while but it looks amazing.</p>
+                    <span>Posted 2 days ago</span>
+                </div>
+                <div class="comment">
+                    <p><strong>AlexMinerPro:</strong> The roof was a bit tricky, any tips for getting the curves right?</p>
+                    <span>Posted 1 day ago</span>
+                </div>
+                <form class="comment-form">
+                    <h3>Leave a Comment</h3>
+                    <textarea placeholder="Write your comment here..."></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </section>
+        </article>
+
+        <aside class="sticky-sidebar">
+            <h3>Quick Navigation</h3>
+            <ul>
+                <li><a href="#phase1">Phase 1: Foundation</a></li>
+                <li><a href="#phase2">Phase 2: Second Floor</a></li>
+                <li><a href="#phase3">Phase 3: Third Floor</a></li>
+                <li><a href="#phase4">Phase 4: Top Spire</a></li>
+                <li><a href="#phase5">Phase 5: Interior</a></li>
+            </ul>
+            <div class="related-builds">
+                <h4>Related Builds</h4>
+                <div class="related-build-item">
+                    <img src="https://via.placeholder.com/150x80.png?text=Medieval+Castle" alt="Medieval Castle">
+                    <p>Epic Medieval Castle</p>
+                </div>
+                <div class="related-build-item">
+                    <img src="https://via.placeholder.com/150x80.png?text=Modern+Mansion" alt="Modern Mansion">
+                    <p>Sleek Modern Mansion</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2023 BuildItApp.com - Dream It. Plan It. BuildIt!</p>
+        <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
