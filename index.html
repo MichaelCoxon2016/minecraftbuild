@@ -4,7 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cozy Underground Hobbit Hole - BuildItApp</title>
-    <style> /* PASTE SHARED CSS HERE */ </style>
+    <style>
+        /* PASTE SHARED CSS HERE */
+        /* Basic Reset & Body Styles */
+        body, html { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; color: #333; line-height: 1.6; }
+        .site-header { background-color: #333; color: #fff; padding: 1rem 0; text-align: center; border-bottom: #0779e4 3px solid; }
+        .site-header .logo { font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem; }
+        .site-header nav a { color: #fff; text-decoration: none; padding: 0.5rem 1rem; margin: 0 0.2rem; }
+        .site-header nav a:hover { background-color: #0779e4; border-radius: 5px; }
+        .build-tutorial-page { display: flex; flex-wrap: wrap; max-width: 1400px; margin: 20px auto; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 20px; }
+        .build-content { flex: 3; padding-right: 20px; }
+        .sticky-sidebar { flex: 1; padding-left: 20px; border-left: 1px solid #eee; position: sticky; top: 20px; align-self: flex-start; max-height: calc(100vh - 40px); overflow-y: auto; }
+        .build-content h1 { color: #0779e4; margin-bottom: 5px; }
+        .author { font-style: italic; color: #777; margin-bottom: 20px; }
+        .build-intro-media { margin-bottom: 20px; }
+        .main-build-image { width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; margin: 20px auto; border-radius: 8px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .build-summary, .materials-list, .build-phase, .completion-message, .comments-section, .next-build-section { margin-bottom: 30px; padding: 15px; border: 1px solid #e0e0e0; border-radius: 5px; background-color: #fdfdfd; }
+        .build-summary h2, .materials-list h2, .build-phase h3, .completion-message h2, .comments-section h2 { color: #333; border-bottom: 2px solid #0779e4; padding-bottom: 5px; margin-top: 0; }
+        .key-info p { margin: 5px 0; font-size: 0.9rem; } .key-info strong { color: #555; }
+        .materials-list ul { list-style: disc; padding-left: 20px; }
+        .tutorial-phases-nav { margin-bottom: 30px; background-color: #e9f5ff; padding: 15px; border-radius: 5px; }
+        .tutorial-phases-nav ol { padding-left: 20px; } .tutorial-phases-nav ol li a { text-decoration: none; color: #0056b3; }
+        .tutorial-phases-nav ol li a:hover { text-decoration: underline; }
+        .build-step { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; }
+        .build-step:last-child { border-bottom: none; }
+        .build-step h4 { margin-top: 0; color: #17a2b8; }
+        .build-step img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; margin-top: 10px; display: block; }
+        .tip { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 10px; margin-top: 10px; font-size: 0.9em; }
+        .comment { border: 1px solid #eee; padding: 10px; margin-bottom: 10px; border-radius: 4px; }
+        .comment strong { color: #0779e4; } .comment span { display: block; font-size: 0.8em; color: #777; margin-top: 5px; }
+        .comment-form textarea { width: calc(100% - 22px); padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; min-height: 80px; }
+        .comment-form button { background-color: #0779e4; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+        .comment-form button:hover { background-color: #0056b3; }
+        .next-build-section { text-align: center; padding: 20px; }
+        .next-build-button { display: inline-block; background-color: #28a745; color: white; padding: 12px 25px; text-decoration: none; font-size: 1.1em; border-radius: 5px; transition: background-color 0.3s ease; }
+        .next-build-button:hover { background-color: #218838; }
+        .sticky-sidebar h3, .sticky-sidebar h4 { color: #333; margin-top: 0; }
+        .sticky-sidebar ul { list-style: none; padding: 0; } .sticky-sidebar ul li a { text-decoration: none; color: #0056b3; display: block; padding: 5px 0; }
+        .sticky-sidebar ul li a:hover { text-decoration: underline; }
+        .related-builds { margin-top: 20px; }
+        .related-build-item { display: flex; align-items: center; margin-bottom: 10px; }
+        .related-build-item img { width: 100px; height: auto; margin-right: 10px; border-radius: 4px; }
+        .site-footer { background-color: #222; color: #aaa; text-align: center; padding: 1.5rem 0; margin-top: 30px; font-size: 0.9em; }
+        .site-footer p { margin: 0.3rem 0; } .site-footer a { color: #07c8f9; text-decoration: none; }
+        .site-footer a:hover { text-decoration: underline; }
+        @media (max-width: 992px) { .build-tutorial-page { flex-direction: column; } .build-content { padding-right: 0; } .sticky-sidebar { position: static; width: 100%; border-left: none; border-top: 1px solid #eee; padding-left: 0; margin-top: 20px; max-height: none; overflow-y: visible; } }
+        @media (max-width: 768px) { .site-header nav { display: flex; flex-direction: column; } .site-header nav a { margin-bottom: 0.3rem; } }
+    </style>
 </head>
 <body>
     <header class="site-header"><div class="logo">BuildItApp.com</div><nav><a href="#home">Home</a><a href="#builds">All Builds</a><a href="#categories">Categories</a></nav></header>
@@ -21,17 +69,17 @@
                 <p>Create a charming and rustic dwelling built into a hillside, with round doors and a warm, inviting interior. Follow the video guide.</p>
                 <div class="key-info"><p><strong>Difficulty:</strong> Intermediate</p><p><strong>Materials:</strong> Wood, Dirt, Stone, Flowers, Lanterns (Refer to video)</p></div>
             </section>
-            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Excavation & Exterior Shape</a></li><li><a href="#phase2">Phase 2: Entrance & Window Details</a></li><li><a href="#phase3">Phase 3: Interior Layout & Basic Furnishing</a></li><li><a href="#phase4">Phase 4: Exterior Landscaping & Finishing Touches</a></li></ol></nav>
+            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Excavation & Exterior Shape Definition</a></li><li><a href="#phase2">Phase 2: Round Doorway & Window Construction</a></li><li><a href="#phase3">Phase 3: Interior Layout, Rooms & Basic Furnishing</a></li><li><a href="#phase4">Phase 4: Exterior Landscaping, Garden & Finishing Touches</a></li></ol></nav>
             <div class="step-by-step-guide">
-                <section id="phase1" class="build-phase"><h3>Phase 1: Excavation & Exterior Shape</h3><p class="placeholder-text">Digging into a hill and shaping the exterior of the hobbit hole. Screenshots from video.</p></section>
-                <section id="phase2" class="build-phase"><h3>Phase 2: Entrance & Window Details</h3><p class="placeholder-text">Building the iconic round door and windows. Screenshots from video.</p></section>
-                <section id="phase3" class="build-phase"><h3>Phase 3: Interior Layout & Basic Furnishing</h3><p class="placeholder-text">Creating rooms inside and adding cozy, rustic furniture. Screenshots from video.</p></section>
-                <section id="phase4" class="build-phase"><h3>Phase 4: Exterior Landscaping & Finishing Touches</h3><p class="placeholder-text">Adding flowers, paths, a small garden, and other details to blend it into the landscape. Screenshots from video.</p></section>
+                <section id="phase1" class="build-phase"><h3>Phase 1: Excavation & Exterior Shape Definition</h3><p>Find a suitable hillside and excavate the basic shape of the hobbit hole, defining its round frontal appearance. (Video approx. 0:00-X:XX)</p><div class="build-step"><h4>Step 1.1: Choose Location and Excavate</h4><p>Select a hill and dig out the main area for your hobbit hole.</p><img src="https://via.placeholder.com/600x350.png?text=HobbitHole+Step+1.1+Excavate" alt="Hobbit Hole Excavation"></div></section>
+                <section id="phase2" class="build-phase"><h3>Phase 2: Round Doorway & Window Construction</h3><p>Carefully construct the iconic round doorway and any round windows. (Video approx. X:XX-Y:YY)</p></section>
+                <section id="phase3" class="build-phase"><h3>Phase 3: Interior Layout, Rooms & Basic Furnishing</h3><p>Define the interior rooms (living area, kitchen, bedroom) and add cozy, rustic furniture. (Video approx. Y:YY-Z:ZZ)</p></section>
+                <section id="phase4" class="build-phase"><h3>Phase 4: Exterior Landscaping, Garden & Finishing Touches</h3><p>Blend the hobbit hole into the landscape with dirt, grass, flowers, a small garden, a chimney, and other charming details. (Video approx. Z:ZZ-End)</p></section>
             </div>
             <section class="next-build-section"><a href="1-japanese-pagoda.html" class="next-build-button">Back to Start: Japanese Pagoda →</a></section>
         </article>
         <aside class="sticky-sidebar"><h3>Quick Navigation</h3><ul><li><a href="#phase1">Phase 1</a></li><li><a href="#phase2">Phase 2</a></li><li><a href="#phase3">Phase 3</a></li><li><a href="#phase4">Phase 4</a></li></ul><div class="related-builds"><h4>Related Builds</h4><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Pagoda" alt="Pagoda"><p>Japanese Pagoda</p></div><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Castle" alt="Castle"><p>Medieval Castle</p></div></div></aside>
     </main>
-    <footer class="site-footer"><p>© 2023 BuildItApp.com</p></footer>
+    <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
 </body>
 </html>
