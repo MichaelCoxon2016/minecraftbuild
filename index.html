@@ -1,4 +1,9 @@
-<!-- START OF: index.html (Homepage) -->
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #                    START OF: index.html (HOMEPAGE)                # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuildItApp - Minecraft Builds, Hacks & Redstone Tutorials</title>
     <style>
+        /* --- START OF CSS FOR: index.html (HOMEPAGE) --- */
+
         /* Basic Reset & Body Styles */
-        body, html { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e8f0f2; color: #333; line-height: 1.6; }
+        body, html { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e8f0f2; color: #333; line-height: 1.6; scroll-behavior: smooth; }
         .container { width: 90%; max-width: 1200px; margin: 20px auto; padding: 0 20px; }
         /* Header */
         .site-header { background-color: #333; color: #fff; padding: 1rem 0; text-align: center; border-bottom: #0779e4 4px solid; }
@@ -63,14 +70,17 @@
         .site-footer a { color: #07c8f9; text-decoration: none; }
         .site-footer a:hover { text-decoration: underline; }
         @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } .hero p { font-size: 1.1rem; } .content-section h2 { font-size: 1.6rem; } .video-item h3 { font-size: 1.3rem; } .challenge-sign {font-size: 1.2em;} }
+    
+        /* --- END OF CSS FOR: index.html (HOMEPAGE) --- */
     </style>
 </head>
 <body>
+    <!-- --- START OF HTML BODY FOR: index.html (HOMEPAGE) --- -->
     <header class="site-header">
         <div class="logo"><a href="index.html">BuildItApp.com</a></div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="1-japanese-pagoda.html">Builds</a>
+            <a href="1-japanese-pagoda.html">All Builds</a> <!-- Links to the first build page as a starting point -->
             <a href="#categories">Categories</a>
             <a href="#submit">Submit Build</a>
         </nav>
@@ -79,43 +89,10 @@
         <div class="container">
             <h1>Welcome to BuildItApp!</h1>
             <p>Your ultimate hub for incredible Minecraft builds, clever hacks, and mind-bending Redstone creations. <br>Learn, create, and share!</p>
-            <a href="#newest-builds" class="cta-button">See Newest & Challenging Builds ↓</a>
+            <a href="#newest-builds-on-page" class="cta-button">Explore Newest Builds ↓</a>
         </div>
     </section>
     <div class="container">
-        <section class="content-section" id="newest-builds">
-            <h2>Newest & Most Challenging Builds</h2>
-            <div class="builds-grid">
-                <div class="build-card">
-                    <img src="https://via.placeholder.com/300x180.png?text=Science+Base+Thumbnail" alt="Futuristic Science Base">
-                    <div class="build-card-content">
-                        <h4>Futuristic Science Base</h4>
-                        <p>A sprawling high-tech research facility. Perfect for your advanced projects!</p>
-                        <a href="8-science-base.html" class="btn-view-build">View Tutorial</a>
-                    </div>
-                </div>
-                <div class="build-card">
-                    <img src="https://via.placeholder.com/300x180.png?text=Subway+Station+Thumbnail" alt="Subway Station">
-                    <div class="build-card-content">
-                        <h4>Modern Subway Station</h4>
-                        <p>Design a detailed and realistic underground subway station for your city.</p>
-                        <a href="9-subway-station.html" class="btn-view-build">View Tutorial</a>
-                    </div>
-                </div>
-                 <div> <!-- Wrapper for challenge sign and card -->
-                    <div class="challenge-sign">Want a HUGE Challenge!!!!</div>
-                    <div class="build-card">
-                        <img src="https://via.placeholder.com/300x180.png?text=Skyscraper+Thumbnail" alt="Massive Skyscraper">
-                        <div class="build-card-content">
-                            <h4>Massive Skyscraper</h4>
-                            <p>Reach for the sky with this incredibly detailed and towering skyscraper build.</p>
-                            <a href="10-skyscraper.html" class="btn-view-build">View Tutorial</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="content-section">
             <h2>Minecraft Hacks & Tricks</h2>
             <div class="video-showcase">
@@ -147,22 +124,145 @@
                 </div>
             </div>
         </section>
-        <section class="content-section">
-            <h2>More Build Tutorials</h2>
+
+        <section class="content-section" id="newest-builds-on-page"> 
+            <h2>Newest & Most Challenging Builds</h2>
             <div class="builds-grid">
-                <div class="build-card"><img src="https://via.placeholder.com/300x180.png?text=Japanese+Pagoda" alt="Japanese Pagoda"><div class="build-card-content"><h4>Serene Japanese Pagoda</h4><p>An elegant multi-tiered tower with iconic curved roofs.</p><a href="1-japanese-pagoda.html" class="btn-view-build">View Tutorial</a></div></div>
-                <div class="build-card"><img src="https://via.placeholder.com/300x180.png?text=Medieval+Castle" alt="Medieval Castle"><div class="build-card-content"><h4>Epic Medieval Castle</h4><p>A grand stone fortress complete with towering turrets.</p><a href="2-medieval-castle.html" class="btn-view-build">View Tutorial</a></div></div>
-                <div class="build-card"><img src="https://via.placeholder.com/300x180.png?text=Modern+Mansion" alt="Modern Mansion"><div class="build-card-content"><h4>Sleek Modern Mansion</h4><p>Luxurious contemporary home with clean lines and large glass windows.</p><a href="3-modern-mansion.html" class="btn-view-build">View Tutorial</a></div></div>
-                <div class="build-card"><img src="https://via.placeholder.com/300x180.png?text=Hobbit+Hole" alt="Hobbit Hole"><div class="build-card-content"><h4>Cozy Hobbit Hole</h4><p>A charming and rustic dwelling built into the side of a hill.</p><a href="7-hobbit-hole.html" class="btn-view-build">View Tutorial</a></div></div>
+                 <div> 
+                    <div class="challenge-sign">Want a HUGE Challenge!!!!</div>
+                    <div class="build-card">
+                        <img src="https://via.placeholder.com/300x180.png?text=Skyscraper+Thumbnail" alt="Massive Skyscraper">
+                        <div class="build-card-content">
+                            <h4>Massive Skyscraper</h4>
+                            <p>Reach for the sky with this incredibly detailed and towering skyscraper build.</p>
+                            <a href="10-skyscraper.html" class="btn-view-build">View Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="build-card">
+                    <img src="https://via.placeholder.com/300x180.png?text=Factory+Thumbnail" alt="Industrial Factory Complex">
+                    <div class="build-card-content">
+                        <h4>Industrial Factory Complex</h4>
+                        <p>Create a sprawling factory with smokestacks, machinery, and an industrial vibe.</p>
+                        <a href="11-factory.html" class="btn-view-build">View Tutorial</a>
+                    </div>
+                </div>
+                <div class="build-card">
+                    <img src="https://via.placeholder.com/300x180.png?text=Subway+Station+Thumbnail" alt="Subway Station">
+                    <div class="build-card-content">
+                        <h4>Modern Subway Station</h4>
+                        <p>Design a detailed and realistic underground subway station for your city.</p>
+                        <a href="9-subway-station.html" class="btn-view-build">View Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Spotlight Build: The Factory</h2> 
+            <div class="builds-grid" style="grid-template-columns: 1fr; max-width: 400px; margin: auto;"> 
+                <div class="build-card">
+                    <img src="https://via.placeholder.com/300x180.png?text=Factory+Spotlight" alt="Industrial Factory Complex">
+                    <div class="build-card-content">
+                        <h4>Industrial Factory Complex</h4>
+                        <p>Our current main feature! Dive into building a detailed factory with intricate machinery and a sprawling layout. Perfect for an industrial zone in your world.</p>
+                        <a href="11-factory.html" class="btn-view-build">View Full Factory Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section class="content-section">
+            <h2>Other Build Tutorials</h2>
+            <div class="builds-grid">
+                <div class="build-card"><img src="https://via.placeholder.com/300x180.png?text=Japanese+Pagoda" alt="Japanese Pagoda"><div class="build-card-content"><h4>Serene Japanese Pagoda</h4><p>An elegant multi-tiered tower.</p><a href="1-japanese-pagoda.html" class="btn-view-build">View Tutorial</a></div></div>
+                <div class="build-card"><img src="https://via.placeholder.com/300x180.png?text=Medieval+Castle" alt="Medieval Castle"><div class="build-card-content"><h4>Epic Medieval Castle</h4><p>A grand stone fortress.</p><a href="2-medieval-castle.html" class="btn-view-build">View Tutorial</a></div></div>
+                <div class="build-card"><img src="https://via.placeholder.com/300x180.png?text=Modern+Mansion" alt="Modern Mansion"><div class="build-card-content"><h4>Sleek Modern Mansion</h4><p>Luxurious contemporary home.</p><a href="3-modern-mansion.html" class="btn-view-build">View Tutorial</a></div></div>
+                <div class="build-card"><img src="https://via.placeholder.com/300x180.png?text=Science+Base" alt="Science Base"><div class="build-card-content"><h4>Futuristic Science Base</h4><p>High-tech research facility.</p><a href="8-science-base.html" class="btn-view-build">View Tutorial</a></div></div>
             </div>
         </section>
     </div>
     <footer class="site-footer"><p>© 2024 BuildItApp.com - Dream It. Plan It. BuildIt!</p><p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p></footer>
+    <!-- --- END OF HTML BODY FOR: index.html (HOMEPAGE) --- -->
 </body>
 </html>
-<!-- END OF: index.html (Homepage) -->
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #                    END OF: index.html (HOMEPAGE)                  # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
 
-<!-- START OF: 1-japanese-pagoda.html -->
+
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #            START OF: SHARED CSS FOR BUILD TUTORIAL PAGES          # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
+<!--
+    The following <style> block should be copied into the <head>
+    of EACH build tutorial page (1-japanese-pagoda.html through 11-factory.html).
+    It is shown ONCE here for brevity.
+-->
+<style>
+    /* Shared CSS for Build Pages */
+    body, html { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; color: #333; line-height: 1.6; }
+    .site-header { background-color: #333; color: #fff; padding: 1rem 0; text-align: center; border-bottom: #0779e4 3px solid; }
+    .site-header .logo { font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem; }
+    .site-header .logo a { color: #fff; text-decoration: none;}
+    .site-header nav a { color: #fff; text-decoration: none; padding: 0.5rem 1rem; margin: 0 0.2rem; }
+    .site-header nav a:hover { background-color: #0779e4; border-radius: 5px; }
+    .build-tutorial-page { display: flex; flex-wrap: wrap; max-width: 1400px; margin: 20px auto; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 20px; }
+    .build-content { flex: 3; padding-right: 20px; }
+    .sticky-sidebar { flex: 1; padding-left: 20px; border-left: 1px solid #eee; position: sticky; top: 20px; align-self: flex-start; max-height: calc(100vh - 40px); overflow-y: auto; }
+    .build-content h1 { color: #0779e4; margin-bottom: 5px; }
+    .author { font-style: italic; color: #777; margin-bottom: 20px; }
+    .advanced-build-note { background-color: #fffbe6; border: 1px solid #ffe58f; color: #8a6d3b; padding: 15px; margin-bottom: 20px; border-radius: 5px; text-align: center; font-size: 0.95em; }
+    .advanced-build-note strong { color: #664d03; }
+    .build-intro-media { margin-bottom: 20px; }
+    .main-build-image { width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto; }
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; margin: 20px auto; border-radius: 8px; }
+    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    .build-summary, .materials-list, .build-phase, .completion-message, .comments-section, .next-build-section { margin-bottom: 30px; padding: 15px; border: 1px solid #e0e0e0; border-radius: 5px; background-color: #fdfdfd; }
+    .build-summary h2, .materials-list h2, .build-phase h3, .completion-message h2, .comments-section h2 { color: #333; border-bottom: 2px solid #0779e4; padding-bottom: 5px; margin-top: 0; }
+    .key-info p { margin: 5px 0; font-size: 0.9rem; } .key-info strong { color: #555; }
+    .materials-list ul { list-style: disc; padding-left: 20px; }
+    .tutorial-phases-nav { margin-bottom: 30px; background-color: #e9f5ff; padding: 15px; border-radius: 5px; }
+    .tutorial-phases-nav ol { padding-left: 20px; } .tutorial-phases-nav ol li a { text-decoration: none; color: #0056b3; }
+    .tutorial-phases-nav ol li a:hover { text-decoration: underline; }
+    .build-step { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; }
+    .build-step:last-child { border-bottom: none; }
+    .build-step h4 { margin-top: 0; color: #17a2b8; }
+    .build-step img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; margin-top: 10px; display: block; }
+    .tip { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 10px; margin-top: 10px; font-size: 0.9em; }
+    /* Instruction Item Styling - AS REQUESTED */
+    .instruction-item { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px; margin-bottom: 10px; border-left: 4px solid #17a2b8; background-color: #f8f9fa; border-radius: 0 4px 4px 0; font-size: 0.95em; }
+    .instr-action { font-weight: bold; color: #dc3545; padding: 3px 6px; background-color: #ffe3e3; border-radius: 3px; }
+    .instr-quantity { font-style: italic; color: #0056b3; background-color: #e0eFFF; padding: 3px 6px; border-radius: 3px; }
+    .instr-block { font-family: 'Courier New', Courier, monospace; padding: 3px 8px; border-radius: 3px; color: #fff; font-weight: 500; }
+    .instr-detail { color: #495057; flex-grow: 1; }
+    /* Example Minecraft Block Styles (add more as needed for each page) */
+    .mc-stone-bricks { background-color: #8a8a8a; } .mc-dark-oak-log { background-color: #3c2e1a; } .mc-spruce-planks { background-color: #805c38; } .mc-dark-oak-planks { background-color: #502d16;} .mc-dark-oak-stairs { background-color: #4a2609; } .mc-lantern { background-color: #f0a000; color: #333;} .mc-cobblestone { background-color: #999999; } .mc-glass-pane { background-color: #a0d2e8; color: #333; border: 1px solid #7cb9d1;}
+    .mc-white-concrete { background-color: #e0e0e0; color: #333;} .mc-gray-concrete { background-color: #707070;} .mc-cyan-concrete { background-color: #169c9c;} .mc-glass { background-color: #a0d2e8; color: #333; border: 1px solid #7cb9d1;} .mc-iron-block { background-color: #d8d8d8; color: #333;} .mc-sea-lantern { background-color: #a0e6e6; color: #333;} .mc-quartz-block { background-color: #f0ebe0; color: #333;} .mc-rail { background-color: #7a5f48;} .mc-redstone-lamp { background-color: #8B0000;}
+    .mc-brick-block { background-color: #b0604b;} .mc-copper-block { background-color: #b87333;}
+    /* Site Footer (same as homepage for consistency on build pages) */
+    .site-footer { background-color: #222; color: #aaa; text-align: center; padding: 1.5rem 0; margin-top: 30px; font-size: 0.9em; }
+    .site-footer p { margin: 0.3rem 0; } .site-footer a { color: #07c8f9; text-decoration: none; }
+    .site-footer a:hover { text-decoration: underline; }
+    @media (max-width: 992px) { .build-tutorial-page { flex-direction: column; } .build-content { padding-right: 0; } .sticky-sidebar { position: static; width: 100%; border-left: none; border-top: 1px solid #eee; padding-left: 0; margin-top: 20px; max-height: none; overflow-y: visible; } }
+    @media (max-width: 768px) { .site-header nav { display: flex; flex-direction: column; } .site-header nav a { margin-bottom: 0.3rem; } }
+</style>
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #             END OF: SHARED CSS FOR BUILD TUTORIAL PAGES           # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
+
+
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #               START OF: 1-japanese-pagoda.html                    # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -170,41 +270,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serene Japanese Pagoda - BuildItApp</title>
     <style>
-        /* Shared CSS for Build Pages */
-        body, html { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; color: #333; line-height: 1.6; }
-        .site-header { background-color: #333; color: #fff; padding: 1rem 0; text-align: center; border-bottom: #0779e4 3px solid; }
-        .site-header .logo { font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem; }
-        .site-header .logo a { color: #fff; text-decoration: none;}
-        .site-header nav a { color: #fff; text-decoration: none; padding: 0.5rem 1rem; margin: 0 0.2rem; }
-        .site-header nav a:hover { background-color: #0779e4; border-radius: 5px; }
-        .build-tutorial-page { display: flex; flex-wrap: wrap; max-width: 1400px; margin: 20px auto; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 20px; }
-        .build-content { flex: 3; padding-right: 20px; }
-        .sticky-sidebar { flex: 1; padding-left: 20px; border-left: 1px solid #eee; position: sticky; top: 20px; align-self: flex-start; max-height: calc(100vh - 40px); overflow-y: auto; }
-        .build-content h1 { color: #0779e4; margin-bottom: 5px; }
-        .author { font-style: italic; color: #777; margin-bottom: 20px; }
-        .advanced-build-note { background-color: #fffbe6; border: 1px solid #ffe58f; color: #8a6d3b; padding: 15px; margin-bottom: 20px; border-radius: 5px; text-align: center; font-size: 0.95em; }
-        .advanced-build-note strong { color: #664d03; }
-        .build-intro-media { margin-bottom: 20px; }
-        .main-build-image { width: 100%; max-width: 800px; height: auto; border-radius: 8px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto; }
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; margin: 20px auto; border-radius: 8px; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        .build-summary, .materials-list, .build-phase, .completion-message, .comments-section, .next-build-section { margin-bottom: 30px; padding: 15px; border: 1px solid #e0e0e0; border-radius: 5px; background-color: #fdfdfd; }
-        .build-summary h2, .materials-list h2, .build-phase h3, .completion-message h2, .comments-section h2 { color: #333; border-bottom: 2px solid #0779e4; padding-bottom: 5px; margin-top: 0; }
-        .key-info p { margin: 5px 0; font-size: 0.9rem; } .key-info strong { color: #555; }
-        .materials-list ul { list-style: disc; padding-left: 20px; }
-        .tutorial-phases-nav { margin-bottom: 30px; background-color: #e9f5ff; padding: 15px; border-radius: 5px; }
-        .tutorial-phases-nav ol { padding-left: 20px; } .tutorial-phases-nav ol li a { text-decoration: none; color: #0056b3; }
-        .tutorial-phases-nav ol li a:hover { text-decoration: underline; }
-        .build-step { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ccc; }
-        .build-step:last-child { border-bottom: none; }
-        .build-step h4 { margin-top: 0; color: #17a2b8; }
-        .build-step img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; margin-top: 10px; display: block; }
-        .tip { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 10px; margin-top: 10px; font-size: 0.9em; }
-        .site-footer { background-color: #222; color: #aaa; text-align: center; padding: 1.5rem 0; margin-top: 30px; font-size: 0.9em; }
-        .site-footer p { margin: 0.3rem 0; } .site-footer a { color: #07c8f9; text-decoration: none; }
-        .site-footer a:hover { text-decoration: underline; }
-        @media (max-width: 992px) { .build-tutorial-page { flex-direction: column; } .build-content { padding-right: 0; } .sticky-sidebar { position: static; width: 100%; border-left: none; border-top: 1px solid #eee; padding-left: 0; margin-top: 20px; max-height: none; overflow-y: visible; } }
-        @media (max-width: 768px) { .site-header nav { display: flex; flex-direction: column; } .site-header nav a { margin-bottom: 0.3rem; } }
+        /* PASTE SHARED CSS FOR BUILD PAGES HERE (FROM BLOCK ABOVE) */
     </style>
 </head>
 <body>
@@ -226,23 +292,32 @@
             <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Foundation & First Tier Base</a></li><li><a href="#phase2">Phase 2: First Tier Walls & Roof</a></li><li><a href="#phase3">Phase 3: Subsequent Tiers</a></li><li><a href="#phase4">Phase 4: Top Spire & Details</a></li></ol></nav>
             <div class="step-by-step-guide">
                 <section id="phase1" class="build-phase"><h3>Phase 1: Foundation & First Tier Base</h3><p>Lay out the pagoda's base, establish the core pillar structure, and build the platform for the first main tier.</p>
-                    <div class="build-step"><h4>Step 1.1: Mark Out the Base Dimensions</h4><p>Using your chosen primary block (e.g., Stone Bricks), mark out the square or rectangular footprint of the pagoda on flat ground as shown in the video.</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+1.1+Base" alt="Pagoda Base Outline"></div>
-                    <div class="build-step"><h4>Step 1.2: Construct Main Support Pillars</h4><p>Erect the main vertical support pillars (e.g., Dark Oak Logs) at the corners and other key structural points identified in the video guide.</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+1.2+Pillars" alt="Pagoda Support Pillars"></div>
-                    <div class="build-step"><h4>Step 1.3: Lay the First Floor Platform</h4><p>Fill in the area between the pillars to create the solid floor for the first tier of the pagoda, typically using wooden planks.</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+1.3+Floor" alt="Pagoda First Floor"></div>
+                    <div class="build-step"><h4>Step 1.1: Mark Out the Base Dimensions</h4>
+                        <div class="instruction-item"><span class="instr-action">DEFINE</span><span class="instr-quantity">AREA</span><span class="instr-detail">on flat ground for a (e.g.) 21x21 block base.</span></div>
+                        <div class="instruction-item"><span class="instr-action">PLACE</span><span class="instr-quantity">MARKERS</span><span class="instr-block mc-stone-bricks">Stone Bricks</span><span class="instr-detail">at the corners of this area.</span></div>
+                        <img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+1.1+Base" alt="Pagoda Base Outline">
+                    </div>
+                    <div class="build-step"><h4>Step 1.2: Construct Main Support Pillars</h4>
+                        <div class="instruction-item"><span class="instr-action">PLACE</span><span class="instr-quantity">4x</span><span class="instr-block mc-dark-oak-log">Dark Oak Log</span><span class="instr-detail">at each marked corner, building up 5 blocks high (example height).</span></div>
+                        <img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+1.2+Pillars" alt="Pagoda Support Pillars">
+                    </div>
+                    <div class="build-step"><h4>Step 1.3: Lay the First Floor Platform</h4>
+                        <div class="instruction-item"><span class="instr-action">FILL</span><span class="instr-detail">the area between the pillars with</span><span class="instr-block mc-dark-oak-planks">Dark Oak Planks</span><span class="instr-detail">to create the first floor.</span></div>
+                        <img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+1.3+Floor" alt="Pagoda First Floor">
+                    </div>
                 </section>
                 <section id="phase2" class="build-phase"><h3>Phase 2: First Tier Walls & Roof</h3><p>This phase covers building the walls for the first tier and constructing its elaborate, curved roof.</p>
-                    <div class="build-step"><h4>Step 2.1: Build First Tier Walls</h4><p>Connect the pillars with wall sections, incorporating any window or door designs shown in the video guide. Use appropriate wood types for these walls.</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+2.1+Walls" alt="Pagoda First Tier Walls"></div>
-                    <div class="build-step"><h4>Step 2.2: Create the First Roof Eaves and Framing</h4><p>Begin constructing the overhanging eaves of the roof. This often involves intricate placement of slabs and stairs to create the initial framing for the curve.</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+2.2+Eaves" alt="Pagoda Roof Eaves"></div>
-                    <div class="build-step"><h4>Step 2.3: Complete the First Tier Roof Surface</h4><p>Carefully follow the video instructions to fill in the roof surface, achieving the signature upward curve of the pagoda roof using stairs, slabs, and full blocks of contrasting colors if desired.</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+2.3+RoofSurface" alt="Pagoda First Roof Surface"></div>
+                    <div class="build-step"><h4>Step 2.1: Build First Tier Walls</h4><p>(Placeholder for componentized instructions based on video)</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+2.1+Walls" alt="Pagoda First Tier Walls"></div>
+                    <div class="build-step"><h4>Step 2.2: Create the First Roof Eaves and Framing</h4><p>(Placeholder for componentized instructions based on video)</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+2.2+Eaves" alt="Pagoda Roof Eaves"></div>
+                    <div class="build-step"><h4>Step 2.3: Complete the First Tier Roof Surface</h4><p>(Placeholder for componentized instructions based on video)</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+2.3+RoofSurface" alt="Pagoda First Roof Surface"></div>
                 </section>
                 <section id="phase3" class="build-phase"><h3>Phase 3: Subsequent Tiers</h3><p>Repeat the process for the second, third, and any additional tiers. Each upper tier is typically a smaller version of the one below it, maintaining the pagoda's tapering profile.</p>
-                    <div class="build-step"><h4>Step 3.1: Build Second Tier Platform and Walls</h4><p>Construct the base for the second tier on top of the first roof, then build its walls, ensuring it's centered and scaled appropriately.</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+3.1+Tier2" alt="Pagoda Second Tier"></div>
-                    <div class="build-step"><h4>Step 3.2: Construct Second Tier Roof</h4><p>Build the roof for the second tier, following the same principles as the first but on a smaller scale.</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+3.2+Tier2Roof" alt="Pagoda Second Tier Roof"></div>
-                    <div class="build-step"><h4>Step 3.3: Repeat for Additional Tiers</h4><p>If the design has more tiers, continue this process, making each subsequent tier and its roof smaller.</p></div>
+                    <div class="build-step"><h4>Step 3.1: Build Second Tier Platform and Walls</h4><p>(Placeholder for componentized instructions based on video)</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+3.1+Tier2" alt="Pagoda Second Tier"></div>
+                    <div class="build-step"><h4>Step 3.2: Construct Second Tier Roof</h4><p>(Placeholder for componentized instructions based on video)</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+3.2+Tier2Roof" alt="Pagoda Second Tier Roof"></div>
                 </section>
                 <section id="phase4" class="build-phase"><h3>Phase 4: Top Spire & Details</h3><p>Complete the pagoda by constructing the topmost spire (finial) and adding decorative details such as lanterns, railings, banners, and any interior touches shown.</p>
-                    <div class="build-step"><h4>Step 4.1: Construct the Spire (Finial)</h4><p>Build the intricate spire that crowns the pagoda, following the video's design. This often involves detailed work with fences, walls, and unique blocks.</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+4.1+Spire" alt="Pagoda Spire"></div>
-                    <div class="build-step"><h4>Step 4.2: Add Decorative Elements</h4><p>Place lanterns for lighting, add railings to balconies or edges, hang banners, and include any other traditional Japanese architectural details shown in the video.</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+4.2+Details" alt="Pagoda Decorative Details"></div>
+                    <div class="build-step"><h4>Step 4.1: Construct the Spire (Finial)</h4><p>(Placeholder for componentized instructions based on video)</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+4.1+Spire" alt="Pagoda Spire"></div>
+                    <div class="build-step"><h4>Step 4.2: Add Decorative Elements</h4><p>(Placeholder for componentized instructions based on video)</p><img src="https://via.placeholder.com/600x350.png?text=Pagoda+Step+4.2+Details" alt="Pagoda Decorative Details"></div>
                 </section>
             </div>
             <section class="next-build-section"><a href="2-medieval-castle.html" class="next-build-button">Next Build: Epic Medieval Castle →</a></section>
@@ -252,9 +327,18 @@
     <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
 </body>
 </html>
-<!-- END OF: 1-japanese-pagoda.html -->
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #                 END OF: 1-japanese-pagoda.html                    # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
 
-<!-- START OF: 2-medieval-castle.html -->
+
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #                 START OF: 2-medieval-castle.html                  # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -282,25 +366,12 @@
             <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Layout & Foundation Walls</a></li><li><a href="#phase2">Phase 2: Towers & Gatehouse</a></li><li><a href="#phase3">Phase 3: Keep & Interior Structures</a></li><li><a href="#phase4">Phase 4: Battlements & Details</a></li></ol></nav>
             <div class="step-by-step-guide">
                 <section id="phase1" class="build-phase"><h3>Phase 1: Layout & Foundation Walls</h3><p>Plan the castle's footprint and erect the main curtain walls.</p>
-                    <div class="build-step"><h4>Step 1.1: Define Castle Perimeter</h4><p>Mark out the overall shape of your castle walls on the ground using a distinct block. Consider the terrain.</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+1.1+Perimeter" alt="Castle Perimeter"></div>
-                    <div class="build-step"><h4>Step 1.2: Build Foundation of Curtain Walls</h4><p>Construct the base layer of the main outer walls, ensuring they are thick and sturdy-looking.</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+1.2+Foundations" alt="Castle Wall Foundations"></div>
-                    <div class="build-step"><h4>Step 1.3: Raise Curtain Walls to Height</h4><p>Build up the curtain walls to their desired height, varying the texture with different stone types if shown.</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+1.3+Walls" alt="Castle Walls Raised"></div>
+                    <div class="build-step"><h4>Step 1.1: Define Castle Perimeter</h4><p>(Placeholder for componentized instructions based on video)</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+1.1+Perimeter" alt="Castle Perimeter"></div>
+                    <div class="build-step"><h4>Step 1.2: Build Foundation of Curtain Walls</h4><p>(Placeholder for componentized instructions based on video)</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+1.2+Foundations" alt="Castle Wall Foundations"></div>
                 </section>
-                <section id="phase2" class="build-phase"><h3>Phase 2: Towers & Gatehouse</h3><p>Construct the defensive towers at corners and along walls, and build the main gatehouse.</p>
-                    <div class="build-step"><h4>Step 2.1: Build Corner Towers</h4><p>Erect tall, robust towers at each major corner of your castle walls. These can be round or square.</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+2.1+CornerTowers" alt="Castle Corner Towers"></div>
-                    <div class="build-step"><h4>Step 2.2: Construct Intermediate Wall Towers</h4><p>If the walls are long, add smaller towers or bastions along their length for added defense and visual interest.</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+2.2+WallTowers" alt="Castle Wall Towers"></div>
-                    <div class="build-step"><h4>Step 2.3: Build the Main Gatehouse</h4><p>Create a strong, defensible gatehouse, often with double towers, a portcullis area, and murder holes if detailed.</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+2.3+Gatehouse" alt="Castle Gatehouse"></div>
-                </section>
-                <section id="phase3" class="build-phase"><h3>Phase 3: Keep & Interior Structures</h3><p>Build the central keep (main tower/living quarters) and any other buildings within the castle courtyard like barracks, stables, or a great hall.</p>
-                    <div class="build-step"><h4>Step 3.1: Construct the Keep Foundation</h4><p>Lay out and build the foundation for the castle's main keep, the most prominent and defensible structure.</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+3.1+KeepFound" alt="Castle Keep Foundation"></div>
-                    <div class="build-step"><h4>Step 3.2: Build the Keep Walls and Floors</h4><p>Raise the keep to its full height, adding multiple floors and internal divisions as shown in the video.</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+3.2+KeepWalls" alt="Castle Keep Walls"></div>
-                    <div class="build-step"><h4>Step 3.3: Add Other Courtyard Buildings</h4><p>If applicable, build any smaller structures within the castle walls according to the video guide.</p></div>
-                </section>
-                <section id="phase4" class="build-phase"><h3>Phase 4: Battlements & Details</h3><p>Add battlements (crenellations) to walls and towers, flags, banners, and other fine details to complete the medieval look.</p>
-                    <div class="build-step"><h4>Step 4.1: Add Battlements and Crenellations</h4><p>Create the classic notched tops on all walls and towers for archers and defense.</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+4.1+Battlements" alt="Castle Battlements"></div>
-                    <div class="build-step"><h4>Step 4.2: Decorate with Banners and Flags</h4><p>Design and place banners representing the castle's faction or lord.</p><img src="https://via.placeholder.com/600x350.png?text=Castle+Step+4.2+Banners" alt="Castle Banners"></div>
-                    <div class="build-step"><h4>Step 4.3: Final Touches</h4><p>Add lighting, pathways, and any other small details shown in the video to bring the castle to life.</p></div>
-                </section>
+                <section id="phase2" class="build-phase"><h3>Phase 2: Towers & Gatehouse</h3><p>(Placeholders for more steps)</p></section>
+                <section id="phase3" class="build-phase"><h3>Phase 3: Keep & Interior Structures</h3><p>(Placeholders for more steps)</p></section>
+                <section id="phase4" class="build-phase"><h3>Phase 4: Battlements & Details</h3><p>(Placeholders for more steps)</p></section>
             </div>
             <section class="next-build-section"><a href="3-modern-mansion.html" class="next-build-button">Next Build: Sleek Modern Mansion →</a></section>
         </article>
@@ -309,407 +380,21 @@
     <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
 </body>
 </html>
-<!-- END OF: 2-medieval-castle.html -->
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #                   END OF: 2-medieval-castle.html                  # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
 
-<!-- START OF: 3-modern-mansion.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleek Modern Mansion - BuildItApp</title>
-    <style> /* PASTE SHARED CSS FOR BUILD PAGES HERE */ </style>
-</head>
-<body>
-    <header class="site-header"><div class="logo"><a href="index.html">BuildItApp.com</a></div><nav><a href="index.html">Home</a><a href="1-japanese-pagoda.html">Builds</a><a href="#categories">Categories</a></nav></header>
-    <main class="build-tutorial-page">
-        <article class="build-content">
-            <h1>Sleek Modern Mansion Tutorial</h1>
-            <p class="author">Video by: Creator | Guide by: BuildItApp Team</p>
-            <div class="advanced-build-note"><strong>Note:</strong> Video builds are generally more advanced. Take your time, pause the video frequently, and refer to the steps below.</div>
-            <div class="build-intro-media">
-                <img src="https://via.placeholder.com/800x450.png?text=Finished+Modern+Mansion" alt="Finished Modern Mansion" class="main-build-image">
-                <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/af2IUFtPrxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            <section class="build-summary">
-                <h2>Build Overview</h2>
-                <p>Design a luxurious contemporary home with clean lines, large glass windows, open-plan interiors, and maybe a pool. Follow the video guide.</p>
-                <div class="key-info"><p><strong>Difficulty:</strong> Intermediate</p><p><strong>Materials:</strong> Concrete, Quartz, Glass, Wood (Refer to video)</p></div>
-            </section>
-            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Foundation & Ground Floor Layout</a></li><li><a href="#phase2">Phase 2: Walls & Window Placement</a></li><li><a href="#phase3">Phase 3: Upper Floors & Roofing</a></li><li><a href="#phase4">Phase 4: Exterior Details & Landscaping</a></li><li><a href="#phase5">Phase 5: Interior Design & Furnishing</a></li></ol></nav>
-            <div class="step-by-step-guide">
-                <section id="phase1" class="build-phase"><h3>Phase 1: Foundation & Ground Floor Layout</h3><p>Establish the foundation and the basic layout of the ground floor rooms and spaces.</p>
-                    <div class="build-step"><h4>Step 1.1: Define Footprint and Foundation</h4><p>Mark out the overall dimensions of the mansion on a flat area using blocks like concrete or quartz.</p><img src="https://via.placeholder.com/600x350.png?text=Mansion+Step+1.1+Footprint" alt="Mansion Footprint"></div>
-                    <div class="build-step"><h4>Step 1.2: Plan Ground Floor Rooms</h4><p>Lay out the initial walls for the ground floor, considering spaces like the living room, kitchen, and garage.</p><img src="https://via.placeholder.com/600x350.png?text=Mansion+Step+1.2+Rooms" alt="Mansion Ground Floor Rooms"></div>
-                </section>
-                <section id="phase2" class="build-phase"><h3>Phase 2: Walls & Window Placement</h3><p>Construct the main exterior and interior walls, paying close attention to the placement of large modern windows.</p>
-                    <div class="build-step"><h4>Step 2.1: Build Exterior Walls to Height</h4><p>Raise the exterior walls, often using smooth materials like white concrete or quartz.</p><img src="https://via.placeholder.com/600x350.png?text=Mansion+Step+2.1+ExtWalls" alt="Mansion Exterior Walls"></div>
-                    <div class="build-step"><h4>Step 2.2: Install Large Glass Windows</h4><p>Incorporate expansive glass panes or custom window designs, a hallmark of modern architecture.</p><img src="https://via.placeholder.com/600x350.png?text=Mansion+Step+2.2+Windows" alt="Mansion Windows"></div>
-                </section>
-                <section id="phase3" class="build-phase"><h3>Phase 3: Upper Floors & Roofing</h3><p>Build any upper stories and construct the characteristic flat or slightly sloped modern roofing.</p>
-                    <div class="build-step"><h4>Step 3.1: Construct Second Floor (if applicable)</h4><p>Lay the floor for the second story and build its walls, following the design's layout.</p><img src="https://via.placeholder.com/600x350.png?text=Mansion+Step+3.1+SecondFloor" alt="Mansion Second Floor"></div>
-                    <div class="build-step"><h4>Step 3.2: Build Modern Roof Structure</h4><p>Create the flat or minimally sloped roof, often using slabs and incorporating overhangs or geometric shapes.</p><img src="https://via.placeholder.com/600x350.png?text=Mansion+Step+3.2+Roof" alt="Mansion Roof"></div>
-                </section>
-                <section id="phase4" class="build-phase"><h3>Phase 4: Exterior Details & Landscaping</h3><p>Add balconies, patios, driveways, and consider landscaping elements like a swimming pool or modern garden features.</p>
-                    <div class="build-step"><h4>Step 4.1: Add Balconies and Patios</h4><p>Construct any outdoor living spaces as shown in the video guide.</p><img src="https://via.placeholder.com/600x350.png?text=Mansion+Step+4.1+Balcony" alt="Mansion Balcony"></div>
-                    <div class="build-step"><h4>Step 4.2: Implement Landscaping (Pool, Driveway)</h4><p>Create a driveway, paths, and if the design includes it, a modern swimming pool and surrounding deck.</p><img src="https://via.placeholder.com/600x350.png?text=Mansion+Step+4.2+Pool" alt="Mansion Pool"></div>
-                </section>
-                <section id="phase5" class="build-phase"><h3>Phase 5: Interior Design & Furnishing</h3><p>Focus on open-plan layouts, minimalist modern furniture, and lighting to complete the mansion's interior.</p>
-                    <div class="build-step"><h4>Step 5.1: Define Interior Spaces</h4><p>Finalize interior wall placements for bedrooms, bathrooms, and common areas.</p></div>
-                    <div class="build-step"><h4>Step 5.2: Add Modern Furniture and Lighting</h4><p>Furnish the rooms with sleek, modern pieces and install appropriate lighting fixtures as per the video.</p><img src="https://via.placeholder.com/600x350.png?text=Mansion+Step+5.2+Interior" alt="Mansion Interior"></div>
-                </section>
-            </div>
-            <section class="next-build-section"><a href="4-wizard-tower.html" class="next-build-button">Next Build: Floating Wizard's Tower →</a></section>
-        </article>
-        <aside class="sticky-sidebar"><h3>Quick Navigation</h3><ul><li><a href="#phase1">Phase 1</a></li><li><a href="#phase2">Phase 2</a></li><li><a href="#phase3">Phase 3</a></li><li><a href="#phase4">Phase 4</a></li><li><a href="#phase5">Phase 5</a></li></ul><div class="related-builds"><h4>Related Builds</h4><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Castle" alt="Castle"><p>Medieval Castle</p></div><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Airship" alt="Airship"><p>Steampunk Airship</p></div></div></aside>
-    </main>
-    <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
-</body>
-</html>
-<!-- END OF: 3-modern-mansion.html -->
 
-<!-- START OF: 4-wizard-tower.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floating Wizard's Tower - BuildItApp</title>
-    <style> /* PASTE SHARED CSS FOR BUILD PAGES HERE */ </style>
-</head>
-<body>
-    <header class="site-header"><div class="logo"><a href="index.html">BuildItApp.com</a></div><nav><a href="index.html">Home</a><a href="1-japanese-pagoda.html">Builds</a><a href="#categories">Categories</a></nav></header>
-    <main class="build-tutorial-page">
-        <article class="build-content">
-            <h1>Floating Wizard's Tower Tutorial</h1>
-            <p class="author">Video by: Creator | Guide by: BuildItApp Team</p>
-            <div class="advanced-build-note"><strong>Note:</strong> Video builds are generally more advanced. Take your time, pause the video frequently, and refer to the steps below.</div>
-            <div class="build-intro-media">
-                <img src="https://via.placeholder.com/800x450.png?text=Finished+Wizard+Tower" alt="Finished Wizard Tower" class="main-build-image">
-                <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/kwm2IaRsWTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            <section class="build-summary">
-                <h2>Build Overview</h2>
-                <p>Create a mystical floating spire, adorned with glowing crystals and ancient runes. Follow the video guide for this magical build.</p>
-                <div class="key-info"><p><strong>Difficulty:</strong> Advanced</p><p><strong>Materials:</strong> Stone, Blackstone, Amethyst, Glass, Magical Blocks (Refer to video)</p></div>
-            </section>
-            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Floating Island Base & Lower Structure</a></li><li><a href="#phase2">Phase 2: Main Tower Shaft & Levels</a></li><li><a href="#phase3">Phase 3: Observatory/Top Section & Roof</a></li><li><a href="#phase4">Phase 4: Magical Details, Crystals & Lighting</a></li></ol></nav>
-            <div class="step-by-step-guide">
-                <section id="phase1" class="build-phase"><h3>Phase 1: Floating Island Base & Lower Structure</h3><p>Construct the floating island or magical anchor point and begin the tower's lower sections.</p>
-                    <div class="build-step"><h4>Step 1.1: Create Floating Base/Island</h4><p>Build the island or platform that the tower will sit upon, giving it a floating appearance. Use a mix of stone and earth-like blocks.</p><img src="https://via.placeholder.com/600x350.png?text=WizardTower+Step+1.1+Base" alt="Wizard Tower Floating Base"></div>
-                    <div class="build-step"><h4>Step 1.2: Build the Tower's Foundation on the Island</h4><p>Establish the footprint of the tower on the floating island and build the initial layers of its base, often wider than the main shaft.</p><img src="https://via.placeholder.com/600x350.png?text=WizardTower+Step+1.2+TowerBase" alt="Wizard Tower Foundation"></div>
-                </section>
-                <section id="phase2" class="build-phase"><h3>Phase 2: Main Tower Shaft & Levels</h3><p>Build the main vertical structure of the tower, incorporating different levels or rooms, often with a spiraling staircase or magical lift.</p>
-                    <div class="build-step"><h4>Step 2.1: Construct the Tower Shaft</h4><p>Raise the main cylindrical or polygonal shaft of the tower to the desired height.</p><img src="https://via.placeholder.com/600x350.png?text=WizardTower+Step+2.1+Shaft" alt="Wizard Tower Shaft"></div>
-                    <div class="build-step"><h4>Step 2.2: Define Interior Levels and Access</h4><p>Add floors for different rooms (library, alchemy lab, etc.) and create access between them (stairs, ladders, or magical elements).</p><img src="https://via.placeholder.com/600x350.png?text=WizardTower+Step+2.2+Levels" alt="Wizard Tower Interior Levels"></div>
-                </section>
-                <section id="phase3" class="build-phase"><h3>Phase 3: Observatory/Top Section & Roof</h3><p>Construct the uppermost part of the tower, often an observatory with a dome or a more ornate section, and add the roof.</p>
-                    <div class="build-step"><h4>Step 3.1: Build the Top Section/Observatory</h4><p>Create the distinct top structure, which might be wider or feature large windows for stargazing.</p><img src="https://via.placeholder.com/600x350.png?text=WizardTower+Step+3.1+Observatory" alt="Wizard Tower Observatory"></div>
-                    <div class="build-step"><h4>Step 3.2: Add the Roof</h4><p>Top the tower with a conical, domed, or uniquely shaped roof, often using contrasting or magical block types.</p><img src="https://via.placeholder.com/600x350.png?text=WizardTower+Step+3.2+Roof" alt="Wizard Tower Roof"></div>
-                </section>
-                <section id="phase4" class="build-phase"><h3>Phase 4: Magical Details, Crystals & Lighting</h3><p>Add enchanting elements like glowing crystals, runic carvings, mystical lighting, floating particles, and other wizardly decorations.</p>
-                    <div class="build-step"><h4>Step 4.1: Incorporate Crystals and Magical Accents</h4><p>Place amethyst clusters, stained glass, or other blocks to simulate magical energy or crystals.</p><img src="https://via.placeholder.com/600x350.png?text=WizardTower+Step+4.1+Crystals" alt="Wizard Tower Crystals"></div>
-                    <div class="build-step"><h4>Step 4.2: Add Mystical Lighting and Effects</h4><p>Use lanterns, soul lanterns, beacons, or other light sources to create an arcane ambiance. Consider particle effects if possible.</p><img src="https://via.placeholder.com/600x350.png?text=WizardTower+Step+4.2+Lighting" alt="Wizard Tower Lighting"></div>
-                </section>
-            </div>
-            <section class="next-build-section"><a href="5-redstone-smelter.html" class="next-build-button">Next Build: Automated Super Smelter →</a></section>
-        </article>
-        <aside class="sticky-sidebar"><h3>Quick Navigation</h3><ul><li><a href="#phase1">Phase 1</a></li><li><a href="#phase2">Phase 2</a></li><li><a href="#phase3">Phase 3</a></li><li><a href="#phase4">Phase 4</a></li></ul><div class="related-builds"><h4>Related Builds</h4><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Pagoda" alt="Pagoda"><p>Japanese Pagoda</p></div><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Hobbit+Hole" alt="Hobbit Hole"><p>Hobbit Hole</p></div></div></aside>
-    </main>
-    <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
-</body>
-</html>
-<!-- END OF: 4-wizard-tower.html -->
+<!-- ... (Code for builds 3 through 9, with their step-by-step sections as placeholders, just like Medieval Castle above) ... -->
 
-<!-- START OF: 5-redstone-smelter.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automated Super Smelter - BuildItApp</title>
-    <style> /* PASTE SHARED CSS FOR BUILD PAGES HERE */ </style>
-</head>
-<body>
-    <header class="site-header"><div class="logo"><a href="index.html">BuildItApp.com</a></div><nav><a href="index.html">Home</a><a href="1-japanese-pagoda.html">Builds</a><a href="#categories">Categories</a></nav></header>
-    <main class="build-tutorial-page">
-        <article class="build-content">
-            <h1>Automated Redstone Super Smelter Tutorial</h1>
-            <p class="author">Video by: Creator | Guide by: BuildItApp Team</p>
-            <div class="advanced-build-note"><strong>Note:</strong> Video builds are generally more advanced, especially Redstone. Take your time, pause the video frequently, and refer to the steps below.</div>
-            <div class="build-intro-media">
-                <img src="https://via.placeholder.com/800x450.png?text=Finished+Super+Smelter" alt="Finished Super Smelter" class="main-build-image">
-                <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/Oa8YF225GDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            <section class="build-summary">
-                <h2>Build Overview</h2>
-                <p>Build a highly efficient, multi-furnace Redstone contraption to smelt items quickly. Follow the video for this technical build.</p>
-                <div class="key-info"><p><strong>Difficulty:</strong> Intermediate (Redstone knowledge helpful)</p><p><strong>Materials:</strong> Furnaces, Hoppers, Chests, Redstone Dust, Comparators, Repeaters (Refer to video)</p></div>
-            </section>
-            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Furnace Array & Item Input System</a></li><li><a href="#phase2">Phase 2: Fuel Distribution System</a></li><li><a href="#phase3">Phase 3: Output Collection System</a></li><li><a href="#phase4">Phase 4: Control Circuit & Housing (Optional)</a></li></ol></nav>
-            <div class="step-by-step-guide">
-                <section id="phase1" class="build-phase"><h3>Phase 1: Furnace Array & Item Input System</h3><p>Set up the bank of furnaces and the hopper system to feed items into the top of each furnace.</p>
-                    <div class="build-step"><h4>Step 1.1: Arrange Furnaces and Input Chest</h4><p>Place your furnaces in a line or array. Position an input chest where you'll drop items to be smelted.</p><img src="https://via.placeholder.com/600x350.png?text=Smelter+Step+1.1+Furnaces" alt="Smelter Furnace Array"></div>
-                    <div class="build-step"><h4>Step 1.2: Connect Hoppers for Item Input</h4><p>Run a line of hoppers from the input chest, feeding into the top of each furnace in the array.</p><img src="https://via.placeholder.com/600x350.png?text=Smelter+Step+1.2+InputHoppers" alt="Smelter Input Hoppers"></div>
-                </section>
-                <section id="phase2" class="build-phase"><h3>Phase 2: Fuel Distribution System</h3><p>Create the hopper lines and any necessary Redstone to distribute fuel (coal, wood, etc.) to the back or side of each furnace.</p>
-                    <div class="build-step"><h4>Step 2.1: Place Fuel Input Chest</h4><p>Position a chest where you will add fuel for the smelter.</p></div>
-                    <div class="build-step"><h4>Step 2.2: Connect Hoppers for Fuel Input</h4><p>Run a line of hoppers from the fuel chest, feeding into the fuel slot (typically side or back) of each furnace.</p><img src="https://via.placeholder.com/600x350.png?text=Smelter+Step+2.2+FuelHoppers" alt="Smelter Fuel Hoppers"></div>
-                    <div class="build-step"><h4>Step 2.3: Implement Fuel Locking/Distribution (if shown)</h4><p>Some designs use Redstone (comparators, repeaters) to ensure even fuel distribution or to lock hoppers when furnaces are full. Follow video closely.</p></div>
-                </section>
-                <section id="phase3" class="build-phase"><h3>Phase 3: Output Collection System</h3><p>Build hopper lines underneath the furnaces to collect the smelted items and channel them into storage chests.</p>
-                    <div class="build-step"><h4>Step 3.1: Connect Hoppers for Output</h4><p>Place hoppers underneath each furnace to draw out the smelted items.</p><img src="https://via.placeholder.com/600x350.png?text=Smelter+Step+3.1+OutputHoppers" alt="Smelter Output Hoppers"></div>
-                    <div class="build-step"><h4>Step 3.2: Channel Output to Collection Chests</h4><p>Run the output hopper line(s) into one or more large chests for collecting the finished products.</p><img src="https://via.placeholder.com/600x350.png?text=Smelter+Step+3.2+OutputChests" alt="Smelter Output Chests"></div>
-                </section>
-                <section id="phase4" class="build-phase"><h3>Phase 4: Control Circuit & Housing (Optional)</h3><p>Add any on/off switches or control mechanisms if shown in the video, and optionally build a neat housing around the smelter.</p>
-                    <div class="build-step"><h4>Step 4.1: Implement On/Off Switch (if applicable)</h4><p>If the design includes a master switch (often using a lever and Redstone torches/repeaters to lock hoppers), build this circuit.</p></div>
-                    <div class="build-step"><h4>Step 4.2: Build Decorative Housing</h4><p>Optionally, encase the Redstone contraption in a neat building or structure for aesthetics.</p></div>
-                </section>
-            </div>
-            <section class="next-build-section"><a href="6-steampunk-airship.html" class="next-build-button">Next Build: Steampunk Airship →</a></section>
-        </article>
-        <aside class="sticky-sidebar"><h3>Quick Navigation</h3><ul><li><a href="#phase1">Phase 1</a></li><li><a href="#phase2">Phase 2</a></li><li><a href="#phase3">Phase 3</a></li><li><a href="#phase4">Phase 4</a></li></ul><div class="related-builds"><h4>Related Builds</h4><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Modern+House" alt="Modern House"><p>Modern Mansion</p></div><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Airship" alt="Airship"><p>Steampunk Airship</p></div></div></aside>
-    </main>
-    <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
-</body>
-</html>
-<!-- END OF: 5-redstone-smelter.html -->
 
-<!-- START OF: 6-steampunk-airship.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steampunk Airship - BuildItApp</title>
-    <style> /* PASTE SHARED CSS FOR BUILD PAGES HERE */ </style>
-</head>
-<body>
-    <header class="site-header"><div class="logo"><a href="index.html">BuildItApp.com</a></div><nav><a href="index.html">Home</a><a href="1-japanese-pagoda.html">Builds</a><a href="#categories">Categories</a></nav></header>
-    <main class="build-tutorial-page">
-        <article class="build-content">
-            <h1>Steampunk Airship Tutorial</h1>
-            <p class="author">Video by: Creator | Guide by: BuildItApp Team</p>
-            <div class="advanced-build-note"><strong>Note:</strong> Video builds are generally more advanced. Take your time, pause the video frequently, and refer to the steps below.</div>
-            <div class="build-intro-media">
-                <img src="https://via.placeholder.com/800x450.png?text=Finished+Steampunk+Airship" alt="Finished Steampunk Airship" class="main-build-image">
-                <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/oUnJbc5pSKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            <section class="build-summary">
-                <h2>Build Overview</h2>
-                <p>Construct a magnificent flying vessel with Victorian aesthetics and industrial machinery. Follow the video guide for this imaginative build.</p>
-                <div class="key-info"><p><strong>Difficulty:</strong> Advanced</p><p><strong>Materials:</strong> Wood, Copper, Iron, Wool (for balloon), Chains (Refer to video)</p></div>
-            </section>
-            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Keel, Hull & Deck Construction</a></li><li><a href="#phase2">Phase 2: Balloon/Envelope Structure & Rigging</a></li><li><a href="#phase3">Phase 3: Propulsion Systems (Engines, Propellers)</a></li><li><a href="#phase4">Phase 4: Gondola/Cabins & Steampunk Details</a></li></ol></nav>
-            <div class="step-by-step-guide">
-                <section id="phase1" class="build-phase"><h3>Phase 1: Keel, Hull & Deck Construction</h3><p>Lay down the keel, build up the main body (hull) of the airship, and construct the main deck.</p>
-                    <div class="build-step"><h4>Step 1.1: Form the Keel and Basic Hull Shape</h4><p>Create the foundational structure (keel) and the overall shape of the airship's main body, often using wood and metal blocks.</p><img src="https://via.placeholder.com/600x350.png?text=Airship+Step+1.1+Hull" alt="Airship Hull Construction"></div>
-                    <div class="build-step"><h4>Step 1.2: Build Up the Hull Sides</h4><p>Construct the sides of the hull, adding curves and details as shown in the video.</p><img src="https://via.placeholder.com/600x350.png?text=Airship+Step+1.2+HullSides" alt="Airship Hull Sides"></div>
-                    <div class="build-step"><h4>Step 1.3: Construct the Main Deck</h4><p>Lay down the planking for the main deck of the airship.</p><img src="https://via.placeholder.com/600x350.png?text=Airship+Step+1.3+Deck" alt="Airship Deck"></div>
-                </section>
-                <section id="phase2" class="build-phase"><h3>Phase 2: Balloon/Envelope Structure & Rigging</h3><p>Construct the large balloon or gas envelope that provides lift, and add any supporting rigging or framework.</p>
-                    <div class="build-step"><h4>Step 2.1: Create the Balloon Framework (if any)</h4><p>Some designs have an internal frame for the balloon; build this first if applicable.</p></div>
-                    <div class="build-step"><h4>Step 2.2: Build the Balloon Envelope</h4><p>Use wool or other lightweight-looking blocks to create the large, buoyant envelope above the hull.</p><img src="https://via.placeholder.com/600x350.png?text=Airship+Step+2.2+Balloon" alt="Airship Balloon"></div>
-                    <div class="build-step"><h4>Step 2.3: Add Rigging and Supports</h4><p>Connect the balloon to the hull with chains, ropes (fences), or other support structures.</p><img src="https://via.placeholder.com/600x350.png?text=Airship+Step+2.3+Rigging" alt="Airship Rigging"></div>
-                </section>
-                <section id="phase3" class="build-phase"><h3>Phase 3: Propulsion Systems (Engines, Propellers)</h3><p>Build the engines, propellers, and any steering mechanisms like rudders or fins, giving them a steampunk look.</p>
-                    <div class="build-step"><h4>Step 3.1: Construct Engine Housings</h4><p>Build the structures that will house the airship's engines, often using metal blocks and pipes.</p><img src="https://via.placeholder.com/600x350.png?text=Airship+Step+3.1+Engines" alt="Airship Engines"></div>
-                    <div class="build-step"><h4>Step 3.2: Add Propellers or Other Thrusters</h4><p>Create the propellers or other means of propulsion, detailing them with appropriate materials.</p><img src="https://via.placeholder.com/600x350.png?text=Airship+Step+3.2+Propellers" alt="Airship Propellers"></div>
-                    <div class="build-step"><h4>Step 3.3: Build Steering Mechanisms</h4><p>Add rudders, fins, or directional thrusters for steering the airship.</p></div>
-                </section>
-                <section id="phase4" class="build-phase"><h3>Phase 4: Gondola/Cabins & Steampunk Details</h3><p>Construct the gondola (passenger/crew area), cabins, and add numerous steampunk aesthetic details like pipes, gears, vents, and ornate railings.</p>
-                    <div class="build-step"><h4>Step 4.1: Build the Gondola or Main Cabin</h4><p>Create the primary enclosed space for crew and passengers, often suspended below the hull or integrated into it.</p><img src="https://via.placeholder.com/600x350.png?text=Airship+Step+4.1+Gondola" alt="Airship Gondola"></div>
-                    <div class="build-step"><h4>Step 4.2: Add Steampunk Details (Pipes, Gears, Vents)</h4><p>Decorate the airship extensively with copper pipes, iron gears, smokestacks, vents, and other industrial-Victorian elements.</p><img src="https://via.placeholder.com/600x350.png?text=Airship+Step+4.2+Details" alt="Airship Steampunk Details"></div>
-                    <div class="build-step"><h4>Step 4.3: Final Touches (Railings, Lights, Interior)</h4><p>Add safety railings, lighting, and any interior details for the cabins or command deck.</p></div>
-                </section>
-            </div>
-            <section class="next-build-section"><a href="7-hobbit-hole.html" class="next-build-button">Next Build: Cozy Hobbit Hole →</a></section>
-        </article>
-        <aside class="sticky-sidebar"><h3>Quick Navigation</h3><ul><li><a href="#phase1">Phase 1</a></li><li><a href="#phase2">Phase 2</a></li><li><a href="#phase3">Phase 3</a></li><li><a href="#phase4">Phase 4</a></li></ul><div class="related-builds"><h4>Related Builds</h4><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Wizard+Tower" alt="Wizard Tower"><p>Wizard's Tower</p></div><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Super+Smelter" alt="Super Smelter"><p>Automated Smelter</p></div></div></aside>
-    </main>
-    <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
-</body>
-</html>
-<!-- END OF: 6-steampunk-airship.html -->
-
-<!-- START OF: 7-hobbit-hole.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cozy Underground Hobbit Hole - BuildItApp</title>
-    <style> /* PASTE SHARED CSS FOR BUILD PAGES HERE */ </style>
-</head>
-<body>
-    <header class="site-header"><div class="logo"><a href="index.html">BuildItApp.com</a></div><nav><a href="index.html">Home</a><a href="1-japanese-pagoda.html">Builds</a><a href="#categories">Categories</a></nav></header>
-    <main class="build-tutorial-page">
-        <article class="build-content">
-            <h1>Cozy Underground Hobbit Hole Tutorial</h1>
-            <p class="author">Video by: Creator | Guide by: BuildItApp Team</p>
-            <div class="advanced-build-note"><strong>Note:</strong> Video builds are generally more advanced. Take your time, pause the video frequently, and refer to the steps below.</div>
-            <div class="build-intro-media">
-                <img src="https://via.placeholder.com/800x450.png?text=Finished+Hobbit+Hole" alt="Finished Hobbit Hole" class="main-build-image">
-                <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/AC9_PpXbBaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            <section class="build-summary">
-                <h2>Build Overview</h2>
-                <p>Create a charming and rustic dwelling built into a hillside, with round doors and a warm, inviting interior. Follow the video guide.</p>
-                <div class="key-info"><p><strong>Difficulty:</strong> Intermediate</p><p><strong>Materials:</strong> Wood, Dirt, Stone, Flowers, Lanterns (Refer to video)</p></div>
-            </section>
-            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Excavation & Exterior Shape Definition</a></li><li><a href="#phase2">Phase 2: Round Doorway & Window Construction</a></li><li><a href="#phase3">Phase 3: Interior Layout, Rooms & Basic Furnishing</a></li><li><a href="#phase4">Phase 4: Exterior Landscaping, Garden & Finishing Touches</a></li></ol></nav>
-            <div class="step-by-step-guide">
-                <section id="phase1" class="build-phase"><h3>Phase 1: Excavation & Exterior Shape Definition</h3><p>Find a suitable hillside and excavate the basic shape of the hobbit hole, defining its round frontal appearance.</p>
-                    <div class="build-step"><h4>Step 1.1: Choose Location and Excavate Initial Area</h4><p>Select a hill or create one. Dig out the main area for your hobbit hole, creating a recess in the hillside.</p><img src="https://via.placeholder.com/600x350.png?text=HobbitHole+Step+1.1+Excavate" alt="Hobbit Hole Excavation"></div>
-                    <div class="build-step"><h4>Step 1.2: Shape the Frontal Facade</h4><p>Use dirt, grass, and other natural blocks to shape the characteristic rounded front of the hobbit hole, blending it into the hill.</p><img src="https://via.placeholder.com/600x350.png?text=HobbitHole+Step+1.2+Facade" alt="Hobbit Hole Facade Shaping"></div>
-                </section>
-                <section id="phase2" class="build-phase"><h3>Phase 2: Round Doorway & Window Construction</h3><p>Carefully construct the iconic round doorway and any round windows, a key feature of hobbit architecture.</p>
-                    <div class="build-step"><h4>Step 2.1: Build the Round Door Frame</h4><p>Use wood planks, stairs, and slabs to create the circular frame for the main door.</p><img src="https://via.placeholder.com/600x350.png?text=HobbitHole+Step+2.1+DoorFrame" alt="Hobbit Hole Door Frame"></div>
-                    <div class="build-step"><h4>Step 2.2: Install the Door</h4><p>Place the actual door within the frame. This might be a custom design using multiple door parts or trapdoors if shown.</p></div>
-                    <div class="build-step"><h4>Step 2.3: Create Round Windows</h4><p>Similarly, build circular frames for any windows, often using glass panes and wooden elements.</p><img src="https://via.placeholder.com/600x350.png?text=HobbitHole+Step+2.3+Windows" alt="Hobbit Hole Windows"></div>
-                </section>
-                <section id="phase3" class="build-phase"><h3>Phase 3: Interior Layout, Rooms & Basic Furnishing</h3><p>Define the interior rooms (living area, kitchen, bedroom) and add cozy, rustic furniture. Hobbit holes are known for their warm, cluttered charm.</p>
-                    <div class="build-step"><h4>Step 3.1: Define Interior Room Layout</h4><p>Excavate further into the hill to create space for different rooms. Use wooden beams or supports if desired.</p><img src="https://via.placeholder.com/600x350.png?text=HobbitHole+Step+3.1+InteriorLayout" alt="Hobbit Hole Interior Layout"></div>
-                    <div class="build-step"><h4>Step 3.2: Furnish the Living Area</h4><p>Add a fireplace, comfortable seating (stairs and slabs), bookshelves, and other homey touches.</p><img src="https://via.placeholder.com/600x350.png?text=HobbitHole+Step+3.2+LivingRoom" alt="Hobbit Hole Living Room"></div>
-                    <div class="build-step"><h4>Step 3.3: Create a Cozy Kitchen and Bedroom</h4><p>Furnish the kitchen with barrels, a crafting table, and a furnace. Make the bedroom snug with a bed and chests.</p></div>
-                </section>
-                <section id="phase4" class="build-phase"><h3>Phase 4: Exterior Landscaping, Garden & Finishing Touches</h3><p>Blend the hobbit hole into the landscape with dirt, grass, flowers, a small garden, a chimney, and other charming details.</p>
-                    <div class="build-step"><h4>Step 4.1: Add Exterior Greenery and Flowers</h4><p>Cover the roof and surrounding area with grass blocks, bone meal for tall grass, and plant colorful flowers.</p><img src="https://via.placeholder.com/600x350.png?text=HobbitHole+Step+4.1+Greenery" alt="Hobbit Hole Exterior Greenery"></div>
-                    <div class="build-step"><h4>Step 4.2: Create a Small Garden or Path</h4><p>Add a quaint garden patch with crops, or a winding path leading to the door.</p><img src="https://via.placeholder.com/600x350.png?text=HobbitHole+Step+4.2+Garden" alt="Hobbit Hole Garden"></div>
-                    <div class="build-step"><h4>Step 4.3: Build a Chimney and Add Final Details</h4><p>Construct a rustic chimney (often from brick or stone) and add lanterns or other exterior lighting.</p></div>
-                </section>
-            </div>
-            <section class="next-build-section"><a href="8-science-base.html" class="next-build-button">Next Build: Futuristic Science Base →</a></section>
-        </article>
-        <aside class="sticky-sidebar"><h3>Quick Navigation</h3><ul><li><a href="#phase1">Phase 1</a></li><li><a href="#phase2">Phase 2</a></li><li><a href="#phase3">Phase 3</a></li><li><a href="#phase4">Phase 4</a></li></ul><div class="related-builds"><h4>Related Builds</h4><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Pagoda" alt="Pagoda"><p>Japanese Pagoda</p></div><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Castle" alt="Castle"><p>Medieval Castle</p></div></div></aside>
-    </main>
-    <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
-</body>
-</html>
-<!-- END OF: 7-hobbit-hole.html -->
-
-<!-- START OF: 8-science-base.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuristic Science Base - BuildItApp</title>
-    <style> /* PASTE SHARED CSS FOR BUILD PAGES HERE */ </style>
-</head>
-<body>
-    <header class="site-header"><div class="logo"><a href="index.html">BuildItApp.com</a></div><nav><a href="index.html">Home</a><a href="1-japanese-pagoda.html">Builds</a><a href="#categories">Categories</a></nav></header>
-    <main class="build-tutorial-page">
-        <article class="build-content">
-            <h1>Futuristic Science Base Tutorial</h1>
-            <p class="author">Video by: Creator | Guide by: BuildItApp Team</p>
-            <div class="advanced-build-note"><strong>Note:</strong> Video builds are generally more advanced. Take your time, pause the video frequently, and refer to the steps below.</div>
-            <div class="build-intro-media">
-                <img src="https://via.placeholder.com/800x450.png?text=Finished+Science+Base" alt="Finished Science Base" class="main-build-image">
-                <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/sw67PcqS3_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            <section class="build-summary">
-                <h2>Build Overview</h2>
-                <p>Construct a high-tech, futuristic science research facility, complete with laboratories, advanced technology displays, and a sleek, modern aesthetic.</p>
-                <div class="key-info"><p><strong>Difficulty:</strong> Advanced</p><p><strong>Materials:</strong> Concrete (White, Gray, Cyan), Glass (Stained), Iron Blocks, Sea Lanterns, Quartz (Refer to video)</p></div>
-            </section>
-            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Main Structure & Foundation</a></li><li><a href="#phase2">Phase 2: Laboratory Modules & Corridors</a></li><li><a href="#phase3">Phase 3: Central Hub & Advanced Tech Displays</a></li><li><a href="#phase4">Phase 4: Exterior Details & Lighting</a></li><li><a href="#phase5">Phase 5: Interior Outfitting & Final Touches</a></li></ol></nav>
-            <div class="step-by-step-guide">
-                <section id="phase1" class="build-phase"><h3>Phase 1: Main Structure & Foundation</h3><p>Lay out the foundational footprint of the science base and construct the primary structural elements.</p>
-                    <div class="build-step"><h4>Step 1.1: Define Base Footprint</h4><p>Mark out the overall area for the science base using light-colored concrete or quartz blocks, often in a geometric or modular pattern.</p><img src="https://via.placeholder.com/600x350.png?text=SciBase+Step+1.1+Footprint" alt="Science Base Footprint"></div>
-                    <div class="build-step"><h4>Step 1.2: Build Main Structural Supports & Walls</h4><p>Erect the primary support pillars or foundational walls that will define the base's main sections. Use clean, modern blocks.</p><img src="https://via.placeholder.com/600x350.png?text=SciBase+Step+1.2+Supports" alt="Science Base Supports"></div>
-                    <div class="build-step"><h4>Step 1.3: Construct Base Flooring and Initial Levels</h4><p>Lay down the initial flooring for the main levels, often using smooth, clean blocks like polished andesite, gray concrete, or iron blocks. Plan for multiple levels if the design is complex.</p><img src="https://via.placeholder.com/600x350.png?text=SciBase+Step+1.3+Flooring" alt="Science Base Flooring"></div>
-                </section>
-                <section id="phase2" class="build-phase"><h3>Phase 2: Laboratory Modules & Corridors</h3><p>Build individual laboratory modules or sections and connect them with sleek, futuristic corridors.</p>
-                    <div class="build-step"><h4>Step 2.1: Construct Outer Walls of Lab Modules</h4><p>Build the exterior walls of the first lab module, often incorporating large glass panels (stained glass can add color) or specific colored concrete accents (e.g., cyan, light blue).</p><img src="https://via.placeholder.com/600x350.png?text=SciBase+Step+2.1+LabWalls" alt="Science Base Lab Walls"></div>
-                    <div class="build-step"><h4>Step 2.2: Add Roofing and Ceilings to Modules</h4><p>Complete the roof of the lab modules, maintaining a flat, modern aesthetic. Integrate lighting elements like sea lanterns or shroomlights into the ceiling.</p></div>
-                    <div class="build-step"><h4>Step 2.3: Build Connecting Corridors and Walkways</h4><p>Create enclosed corridors or open walkways to link different modules, often using glass, smooth concrete, and accent lighting.</p><img src="https://via.placeholder.com/600x350.png?text=SciBase+Step+2.3+Corridors" alt="Science Base Corridors"></div>
-                </section>
-                <section id="phase3" class="build-phase"><h3>Phase 3: Central Hub & Advanced Tech Displays</h3><p>Develop a central hub or command center and incorporate elements that look like advanced technology or research equipment.</p>
-                    <div class="build-step"><h4>Step 3.1: Build the Central Hub Structure (if applicable)</h4><p>If the design includes a main operations center, a large biodome, or a power core room, construct this prominent area.</p><img src="https://via.placeholder.com/600x350.png?text=SciBase+Step+3.1+Hub" alt="Science Base Central Hub"></div>
-                    <div class="build-step"><h4>Step 3.2: Create "High-Tech" Displays and Consoles</h4><p>Use blocks like iron, beacons, stained glass, item frames with maps (as screens), levers, buttons, and armor stands to simulate computers, machinery, or research projects.</p><img src="https://via.placeholder.com/600x350.png?text=SciBase+Step+3.2+Tech" alt="Science Base Tech Displays"></div>
-                    <div class="build-step"><h4>Step 3.3: Add Specimen Chambers or Containment Units</h4><p>If the theme involves biology or containment, create secure-looking chambers using glass, iron bars, and warning blocks.</p></div>
-                </section>
-                <section id="phase4" class="build-phase"><h3>Phase 4: Exterior Details & Lighting</h3><p>Add exterior features like antennas, sensor arrays, landing pads, and implement futuristic lighting solutions.</p>
-                    <div class="build-step"><h4>Step 4.1: Add Exterior Antennas, Vents, or Equipment</h4><p>Place decorative structures on the roof or sides that resemble scientific equipment like communication arrays, ventilation systems, or solar panels.</p><img src="https://via.placeholder.com/600x350.png?text=SciBase+Step+4.1+Antennas" alt="Science Base Antennas"></div>
-                    <div class="build-step"><h4>Step 4.2: Implement Exterior Lighting Solutions</h4><p>Use sea lanterns, glowstone, or shroomlights concealed or integrated into the structure for a clean, futuristic glow. Consider accent lighting with colored blocks.</p><img src="https://via.placeholder.com/600x350.png?text=SciBase+Step+4.2+ExtLighting" alt="Science Base Exterior Lighting"></div>
-                    <div class="build-step"><h4>Step 4.3: Construct Landing Pads or Access Points</h4><p>If relevant, build a landing pad for futuristic vehicles or a main entrance with automated doors (pistons if you're comfortable with redstone).</p></div>
-                </section>
-                <section id="phase5" class="build-phase"><h3>Phase 5: Interior Outfitting & Final Touches</h3><p>Furnish the laboratories with workstations, storage, and specific research setups. Add final details throughout the base.</p>
-                    <div class="build-step"><h4>Step 5.1: Outfit Laboratories with Equipment</h4><p>Add tables (slabs/stairs), chests, item frames as monitors, potion stands, cauldrons, and other blocks to represent lab equipment and experiments.</p><img src="https://via.placeholder.com/600x350.png?text=SciBase+Step+5.1+LabInterior" alt="Science Base Lab Interior"></div>
-                    <div class="build-step"><h4>Step 5.2: Add Interior Lighting and Functional Details</h4><p>Ensure all interior spaces are well-lit with a modern feel. Add details like custom doors, warning signs (banners), or color-coded pathways on the floor.</p></div>
-                    <div class="build-step"><h4>Step 5.3: Final Walkthrough and Refinements</h4><p>Check the entire base for consistency, add any missing details from the video, and ensure a polished final look. Test any redstone components if used.</p></div>
-                </section>
-            </div>
-            <section class="next-build-section"><a href="9-subway-station.html" class="next-build-button">Next Build: Modern Subway Station →</a></section>
-        </article>
-        <aside class="sticky-sidebar"><h3>Quick Navigation</h3><ul><li><a href="#phase1">Phase 1</a></li><li><a href="#phase2">Phase 2</a></li><li><a href="#phase3">Phase 3</a></li><li><a href="#phase4">Phase 4</a></li><li><a href="#phase5">Phase 5</a></li></ul><div class="related-builds"><h4>Related Builds</h4><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Modern+Mansion" alt="Modern Mansion"><p>Sleek Modern Mansion</p></div><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Super+Smelter" alt="Super Smelter"><p>Automated Smelter</p></div></div></aside>
-    </main>
-    <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
-</body>
-</html>
-<!-- END OF: 8-science-base.html -->
-
-<!-- START OF: 9-subway-station.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Subway Station - BuildItApp</title>
-    <style> /* PASTE SHARED CSS FOR BUILD PAGES HERE */ </style>
-</head>
-<body>
-    <header class="site-header"><div class="logo"><a href="index.html">BuildItApp.com</a></div><nav><a href="index.html">Home</a><a href="1-japanese-pagoda.html">Builds</a><a href="#categories">Categories</a></nav></header>
-    <main class="build-tutorial-page">
-        <article class="build-content">
-            <h1>Modern Subway Station Tutorial</h1>
-            <p class="author">Video by: Creator | Guide by: BuildItApp Team</p>
-            <div class="advanced-build-note"><strong>Note:</strong> Video builds are generally more advanced. Take your time, pause the video frequently, and refer to the steps below.</div>
-            <div class="build-intro-media">
-                <img src="https://via.placeholder.com/800x450.png?text=Finished+Subway+Station" alt="Finished Subway Station" class="main-build-image">
-                <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/31UNlEGExd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            <section class="build-summary">
-                <h2>Build Overview</h2>
-                <p>Design and construct a detailed and realistic modern subway station, perfect for any urban Minecraft world. Includes platforms, tracks, and station facilities.</p>
-                <div class="key-info"><p><strong>Difficulty:</strong> Advanced</p><p><strong>Materials:</strong> Concrete (Gray, White, Yellow), Stone Bricks, Iron Bars, Glass, Rails, Redstone Lamps (Refer to video)</p></div>
-            </section>
-            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Excavation & Station Shell</a></li><li><a href="#phase2">Phase 2: Platforms & Track Beds</a></li><li><a href="#phase3">Phase 3: Station Infrastructure & Lighting</a></li><li><a href="#phase4">Phase 4: Details, Signage & Track Work</a></li><li><a href="#phase5">Phase 5: Entrance/Exit & Surface Integration (Optional)</a></li></ol></nav>
-            <div class="step-by-step-guide">
-                <section id="phase1" class="build-phase"><h3>Phase 1: Excavation & Station Shell</h3><p>Begin by excavating the large underground area for the station and constructing the basic structural shell.</p>
-                    <div class="build-step"><h4>Step 1.1: Excavate Main Station Cavern</h4><p>Dig out a large rectangular area underground to the required depth and length for the station platforms and tracks.</p><img src="https://via.placeholder.com/600x350.png?text=Subway+Step+1.1+Excavation" alt="Subway Station Excavation"></div>
-                    <div class="build-step"><h4>Step 1.2: Build Outer Walls and Ceiling</h4><p>Construct the main structural walls and ceiling of the station, often using gray concrete or stone bricks for an industrial feel.</p><img src="https://via.placeholder.com/600x350.png?text=Subway+Step+1.2+Shell" alt="Subway Station Shell"></div>
-                </section>
-                <section id="phase2" class="build-phase"><h3>Phase 2: Platforms & Track Beds</h3><p>Construct the passenger platforms and prepare the areas where the subway tracks will be laid.</p>
-                    <div class="build-step"><h4>Step 2.1: Build Passenger Platforms</h4><p>Create raised platforms on either side of where the tracks will go. Use materials like smooth stone or concrete, and add a yellow warning line at the edge.</p><img src="https://via.placeholder.com/600x350.png?text=Subway+Step+2.1+Platforms" alt="Subway Station Platforms"></div>
-                    <div class="build-step"><h4>Step 2.2: Prepare Track Beds</h4><p>Dig out or build up the area between/beside platforms for the tracks. This often involves a gravel or stone base.</p><img src="https://via.placeholder.com/600x350.png?text=Subway+Step+2.2+TrackBed" alt="Subway Track Bed"></div>
-                </section>
-                <section id="phase3" class="build-phase"><h3>Phase 3: Station Infrastructure & Lighting</h3><p>Add essential station elements like support pillars, staircases/escalators, and install a lighting system.</p>
-                    <div class="build-step"><h4>Step 3.1: Add Support Pillars and Architectural Features</h4><p>Place support pillars along the platforms or in the center of the station if it's a wide design. Add any arches or ceiling details.</p><img src="https://via.placeholder.com/600x350.png?text=Subway+Step+3.1+Pillars" alt="Subway Support Pillars"></div>
-                    <div class="build-step"><h4>Step 3.2: Construct Access (Stairs/Escalators)</h4><p>Build staircases, or simulate escalators using stairs and slabs, leading to and from the platforms to other levels or exits.</p><img src="https://via.placeholder.com/600x350.png?text=Subway+Step+3.2+Stairs" alt="Subway Stairs"></div>
-                    <div class="build-step"><h4>Step 3.3: Install Lighting System</h4><p>Use Redstone lamps, sea lanterns, or other light sources to illuminate the station effectively, often recessed into the ceiling or walls for a modern look.</p><img src="https://via.placeholder.com/600x350.png?text=Subway+Step+3.3+Lighting" alt="Subway Lighting"></div>
-                </section>
-                <section id="phase4" class="build-phase"><h3>Phase 4: Details, Signage & Track Work</h3><p>Add realistic details like benches, bins, advertising panels, station signage, and lay the actual subway tracks.</p>
-                    <div class="build-step"><h4>Step 4.1: Add Platform Furniture and Fixtures</h4><p>Place benches (stairs/slabs), bins (cauldrons), and potentially ticket machines or information booths.</p></div>
-                    <div class="build-step"><h4>Step 4.2: Create Signage and Advertisements</h4><p>Use banners, signs, item frames with maps, or paintings to create station name signs, directional signs, and mock advertisements.</p><img src="https://via.placeholder.com/600x350.png?text=Subway+Step+4.2+Signage" alt="Subway Signage"></div>
-                    <div class="build-step"><h4>Step 4.3: Lay Subway Tracks and Tunnel Entrances</h4><p>Place rails (and powered rails if functional) in the track beds. Create the dark tunnel entrances at either end of the station.</p><img src="https://via.placeholder.com/600x350.png?text=Subway+Step+4.3+Tracks" alt="Subway Tracks"></div>
-                </section>
-                <section id="phase5" class="build-phase"><h3>Phase 5: Entrance/Exit & Surface Integration (Optional)</h3><p>If shown in the video, construct the above-ground entrance building or integrate the subway access into an existing urban environment.</p>
-                    <div class="build-step"><h4>Step 5.1: Build Station Entrance Structure</h4><p>Create the building or stairway leading down into the subway station from the surface level.</p><img src="https://via.placeholder.com/600x350.png?text=Subway+Step+5.1+Entrance" alt="Subway Entrance"></div>
-                    <div class="build-step"><h4>Step 5.2: Add Surface Level Details</h4><p>Decorate the area around the entrance to blend it with a cityscape or street.</p></div>
-                </section>
-            </div>
-            <section class="next-build-section"><a href="10-skyscraper.html" class="next-build-button">Next Build: Massive Skyscraper →</a></section>
-        </article>
-        <aside class="sticky-sidebar"><h3>Quick Navigation</h3><ul><li><a href="#phase1">Phase 1</a></li><li><a href="#phase2">Phase 2</a></li><li><a href="#phase3">Phase 3</a></li><li><a href="#phase4">Phase 4</a></li><li><a href="#phase5">Phase 5</a></li></ul><div class="related-builds"><h4>Related Builds</h4><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=SciBase" alt="Science Base"><p>Futuristic Science Base</p></div><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Mansion" alt="Modern Mansion"><p>Sleek Modern Mansion</p></div></div></aside>
-    </main>
-    <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
-</body>
-</html>
-<!-- END OF: 9-subway-station.html -->
-
-<!-- START OF: 10-skyscraper.html -->
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #                   START OF: 10-skyscraper.html                    # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -732,38 +417,76 @@
             <section class="build-summary">
                 <h2>Build Overview</h2>
                 <p>Embark on the colossal task of building a towering, highly detailed skyscraper. This project will dominate your skyline and test your building endurance!</p>
-                <div class="key-info"><p><strong>Difficulty:</strong> EXTREMELY Advanced / Mega-Project</p><p><strong>Materials:</strong> Vast quantities of Concrete, Glass, Stone, Iron, Quartz, Lights (Refer to video - material list will be huge!)</p></div>
+                <div class="key-info"><p><strong>Difficulty:</strong> EXTREMELY Advanced / Mega-Project</p><p><strong>Materials:</strong> Vast quantities of Concrete, Glass, Stone, Iron, Quartz, Lights (Refer to video)</p></div>
             </section>
-            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Foundation & Core Structure (First ~10-20 Floors)</a></li><li><a href="#phase2">Phase 2: Mid-Section Repetitive Floors (Bulk of the Height)</a></li><li><a href="#phase3">Phase 3: Upper Section & Architectural Tapering/Setbacks</a></li><li><a href="#phase4">Phase 4: Rooftop, Spire & Antennas</a></li><li><a href="#phase5">Phase 5: Ground Level Entrance, Lobby & Exterior Details</a></li></ol></nav>
+            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Foundation & Core Structure</a></li><li><a href="#phase2">Phase 2: Mid-Section Repetitive Floors</a></li><li><a href="#phase3">Phase 3: Upper Section & Architectural Tapering</a></li><li><a href="#phase4">Phase 4: Rooftop, Spire & Antennas</a></li><li><a href="#phase5">Phase 5: Ground Level & Details</a></li></ol></nav>
             <div class="step-by-step-guide">
-                <section id="phase1" class="build-phase"><h3>Phase 1: Foundation & Core Structure (First ~10-20 Floors)</h3><p>Establish a massive foundation and begin constructing the central core and the initial set of lower floors, which often have unique designs.</p>
-                    <div class="build-step"><h4>Step 1.1: Define Skyscraper Footprint & Massive Foundation</h4><p>Mark out a very large area for the skyscraper's base. Excavate deep and create a solid, wide foundation.</p><img src="https://via.placeholder.com/600x350.png?text=SkyScraper+Step+1.1+Foundation" alt="Skyscraper Foundation"></div>
-                    <div class="build-step"><h4>Step 1.2: Construct Central Core (Elevator Shafts/Stairs)</h4><p>Build the strong central core that will house elevators, stairwells, and utilities. This core will run the full height of the building.</p><img src="https://via.placeholder.com/600x350.png?text=SkyScraper+Step+1.2+Core" alt="Skyscraper Core"></div>
-                    <div class="build-step"><h4>Step 1.3: Build the First Set of Floors & Exterior Facade</h4><p>Construct the initial 10-20 floors around the core, carefully detailing the exterior facade (windows, mullions, curtain walls) as shown in the video. Lower floors might have different designs than upper ones.</p><img src="https://via.placeholder.com/600x350.png?text=SkyScraper+Step+1.3+LowerFloors" alt="Skyscraper Lower Floors"></div>
-                </section>
-                <section id="phase2" class="build-phase"><h3>Phase 2: Mid-Section Repetitive Floors (Bulk of the Height)</h3><p>This is often the most time-consuming part, involving the repetition of a standard floor layout to gain most of the skyscraper's height.</p>
-                    <div class="build-step"><h4>Step 2.1: Establish Standard Floor Layout</h4><p>Define the layout for a typical mid-section floor, including exterior walls, window patterns, and interior floor plate around the core.</p><img src="https://via.placeholder.com/600x350.png?text=SkyScraper+Step+2.1+StdFloor" alt="Skyscraper Standard Floor"></div>
-                    <div class="build-step"><h4>Step 2.2: Replicate Standard Floor Many Times</h4><p>Carefully and patiently replicate this standard floor design layer by layer, building upwards. Use tools like WorldEdit (if on Java with mods) or structure blocks carefully if applicable, or build manually.</p><p class="tip"><strong>Tip:</strong> Break this into manageable chunks. Build 5-10 floors at a time to avoid burnout.</p></div>
-                </section>
-                <section id="phase3" class="build-phase"><h3>Phase 3: Upper Section & Architectural Tapering/Setbacks</h3><p>As the skyscraper nears its top, the design often changes, possibly tapering, having setbacks, or unique architectural features.</p>
-                    <div class="build-step"><h4>Step 3.1: Implement Tapering or Setbacks</h4><p>If the skyscraper narrows towards the top, carefully adjust the floor plates and exterior facade according to the video's design.</p><img src="https://via.placeholder.com/600x350.png?text=SkyScraper+Step+3.1+Taper" alt="Skyscraper Tapering"></div>
-                    <div class="build-step"><h4>Step 3.2: Construct Unique Upper Floor Features</h4><p>Build any special top floors, observation decks, or executive suites that differ from the standard mid-section floors.</p></div>
-                </section>
-                <section id="phase4" class="build-phase"><h3>Phase 4: Rooftop, Spire & Antennas</h3><p>Complete the very top of the skyscraper, including the main roof, any decorative spires, and communication antennas.</p>
-                    <div class="build-step"><h4>Step 4.1: Build the Main Rooftop Structure</h4><p>Construct the primary roof of the skyscraper, which might house mechanical equipment or be a flat accessible area.</p><img src="https://via.placeholder.com/600x350.png?text=SkyScraper+Step+4.1+Rooftop" alt="Skyscraper Rooftop"></div>
-                    <div class="build-step"><h4>Step 4.2: Add Spire and/or Antennas</h4><p>If the design includes a prominent spire or communication antennas, build these intricate top features.</p><img src="https://via.placeholder.com/600x350.png?text=SkyScraper+Step+4.2+Spire" alt="Skyscraper Spire"></div>
-                </section>
-                <section id="phase5" class="build-phase"><h3>Phase 5: Ground Level Entrance, Lobby & Exterior Details</h3><p>Detail the ground level, including a grand entrance, lobby area, and any surrounding plaza or street-level interactions.</p>
-                    <div class="build-step"><h4>Step 5.1: Design the Grand Entrance and Lobby</h4><p>Create an impressive main entrance and a spacious lobby area at the base of the skyscraper.</p><img src="https://via.placeholder.com/600x350.png?text=SkyScraper+Step+5.1+Lobby" alt="Skyscraper Lobby"></div>
-                    <div class="build-step"><h4>Step 5.2: Add Ground-Level Exterior Details</h4><p>Incorporate details like surrounding plazas, landscaping, streetlights, and service entrances.</p></div>
-                    <div class="build-step"><h4>Step 5.3: Implement Night Lighting Scheme</h4><p>Strategically place lights on the exterior facade to illuminate the skyscraper dramatically at night.</p></div>
-                </section>
+                <section id="phase1" class="build-phase"><h3>Phase 1: Foundation & Core Structure</h3><p>(Placeholders for componentized instructions)</p></section>
+                <section id="phase2" class="build-phase"><h3>Phase 2: Mid-Section Repetitive Floors</h3><p>(Placeholders for componentized instructions)</p></section>
+                <section id="phase3" class="build-phase"><h3>Phase 3: Upper Section & Architectural Tapering</h3><p>(Placeholders for componentized instructions)</p></section>
+                <section id="phase4" class="build-phase"><h3>Phase 4: Rooftop, Spire & Antennas</h3><p>(Placeholders for componentized instructions)</p></section>
+                <section id="phase5" class="build-phase"><h3>Phase 5: Ground Level & Details</h3><p>(Placeholders for componentized instructions)</p></section>
             </div>
-            <section class="next-build-section"><a href="1-japanese-pagoda.html" class="next-build-button">Back to Start: Japanese Pagoda →</a></section>
+            <section class="next-build-section"><a href="11-factory.html" class="next-build-button">Next Build: Industrial Factory →</a></section>
         </article>
         <aside class="sticky-sidebar"><h3>Quick Navigation</h3><ul><li><a href="#phase1">Phase 1</a></li><li><a href="#phase2">Phase 2</a></li><li><a href="#phase3">Phase 3</a></li><li><a href="#phase4">Phase 4</a></li><li><a href="#phase5">Phase 5</a></li></ul><div class="related-builds"><h4>Related Builds</h4><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Subway" alt="Subway Station"><p>Modern Subway Station</p></div><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=SciBase" alt="Science Base"><p>Futuristic Science Base</p></div></div></aside>
     </main>
     <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
 </body>
 </html>
-<!-- END OF: 10-skyscraper.html -->
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #                     END OF: 10-skyscraper.html                    # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
+
+
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #                    START OF: 11-factory.html                      # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Factory Complex - BuildItApp</title>
+    <style> /* PASTE SHARED CSS FOR BUILD PAGES HERE */ </style>
+</head>
+<body>
+    <header class="site-header"><div class="logo"><a href="index.html">BuildItApp.com</a></div><nav><a href="index.html">Home</a><a href="1-japanese-pagoda.html">Builds</a><a href="#categories">Categories</a></nav></header>
+    <main class="build-tutorial-page">
+        <article class="build-content">
+            <h1>Industrial Factory Complex Tutorial</h1>
+            <p class="author">Video by: Creator | Guide by: BuildItApp Team</p>
+            <div class="advanced-build-note"><strong>Note:</strong> Video builds are generally more advanced. Take your time, pause the video frequently, and refer to the steps below.</div>
+            <div class="build-intro-media">
+                <img src="https://via.placeholder.com/800x450.png?text=Finished+Factory" alt="Finished Factory Complex" class="main-build-image">
+                <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/FACTORY_VIDEO_ID_HERE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+            <section class="build-summary">
+                <h2>Build Overview</h2>
+                <p>Construct a sprawling industrial factory complex, featuring multiple buildings, smokestacks, machinery details, and a gritty, functional aesthetic. (Remember to replace FACTORY_VIDEO_ID_HERE with the actual video ID for your chosen factory build)</p>
+                <div class="key-info"><p><strong>Difficulty:</strong> Advanced</p><p><strong>Materials:</strong> Bricks, Stone, Iron, Concrete, Copper, Glass, Wood (Refer to video)</p></div>
+            </section>
+            <nav class="tutorial-phases-nav"><h3>Build Phases (General Outline):</h3><ol><li><a href="#phase1">Phase 1: Site Layout & Main Building Foundations</a></li><li><a href="#phase2">Phase 2: Main Factory Building Construction</a></li><li><a href="#phase3">Phase 3: Ancillary Buildings & Structures</a></li><li><a href="#phase4">Phase 4: Smokestacks, Piping & Exterior Machinery</a></li><li><a href="#phase5">Phase 5: Interior Details & Site Landscaping</a></li></ol></nav>
+            <div class="step-by-step-guide">
+                <section id="phase1" class="build-phase"><h3>Phase 1: Site Layout & Main Building Foundations</h3><p>(Placeholders for componentized instructions)</p></section>
+                <section id="phase2" class="build-phase"><h3>Phase 2: Main Factory Building Construction</h3><p>(Placeholders for componentized instructions)</p></section>
+                <section id="phase3" class="build-phase"><h3>Phase 3: Ancillary Buildings & Structures</h3><p>(Placeholders for componentized instructions)</p></section>
+                <section id="phase4" class="build-phase"><h3>Phase 4: Smokestacks, Piping & Exterior Machinery</h3><p>(Placeholders for componentized instructions)</p></section>
+                <section id="phase5" class="build-phase"><h3>Phase 5: Interior Details & Site Landscaping</h3><p>(Placeholders for componentized instructions)</p></section>
+            </div>
+            <section class="next-build-section"><a href="1-japanese-pagoda.html" class="next-build-button">Back to Start: Japanese Pagoda →</a></section>
+        </article>
+        <aside class="sticky-sidebar"><h3>Quick Navigation</h3><ul><li><a href="#phase1">Phase 1</a></li><li><a href="#phase2">Phase 2</a></li><li><a href="#phase3">Phase 3</a></li><li><a href="#phase4">Phase 4</a></li><li><a href="#phase5">Phase 5</a></li></ul><div class="related-builds"><h4>Related Builds</h4><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Skyscraper" alt="Skyscraper"><p>Massive Skyscraper</p></div><div class="related-build-item"><img src="https://via.placeholder.com/150x80.png?text=Super+Smelter" alt="Super Smelter"><p>Automated Smelter</p></div></div></aside>
+    </main>
+    <footer class="site-footer"><p>© 2024 BuildItApp.com</p></footer>
+</body>
+</html>
+<!-- ##################################################################### -->
+<!-- #                                                                   # -->
+<!-- #                      END OF: 11-factory.html                      # -->
+<!-- #                                                                   # -->
+<!-- ##################################################################### -->
